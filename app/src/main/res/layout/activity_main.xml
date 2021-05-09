@@ -21,8 +21,15 @@
         android:text="음식 추천: 쿡 콕!" />
 
     <Button
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="new" />
+
+    <Button
         android:id="@+id/roulette"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="돌려돌려 돌림판" />
+        android:text="(돌림판 개발 시도)" />
+
 </LinearLayout>
