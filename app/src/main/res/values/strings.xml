@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Cook-kok</string>
+
+    <string name="음식점_list">음식점_list</string>
+    <string name="한식">한식</string>
+    <string name="중식">중식</string>
+    <string name="일식">일식</string>
+    <string name="양식">양식</string>
+    <string name="기타">기타</string>
 </resources>
