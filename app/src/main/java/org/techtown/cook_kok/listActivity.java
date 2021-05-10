@@ -12,3 +12,4 @@ public class listActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
     }
 }
+## 이번에는 어떻게든 될 수 있지 않을까요..ㅠ
