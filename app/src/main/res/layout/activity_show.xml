@@ -4,15 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".showActivity">
+    android:background="#F4F3F0"
+    android:backgroundTint="@android:color/white"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView4"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="새로운 페이지입니다."
+        android:background="@drawable/choi_button1"
+        android:backgroundTint="#EDB8B8"
+        android:onClick="onButton2Clicked"
+        android:text="치킨          "
+        android:textSize="30sp"
+        android:layout_marginTop="150sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/choi_button1"
+        android:backgroundTint="#EDB8B8"
+        android:onClick="onButton2Clicked"
+        android:text="떡볶이         "
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/choi_button1"
+        android:backgroundTint="#B1EA84"
+        android:onClick="onButton3Clicked"
+        android:text="네이버 룰렛"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="처음화면으로 돌아가기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30sp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
