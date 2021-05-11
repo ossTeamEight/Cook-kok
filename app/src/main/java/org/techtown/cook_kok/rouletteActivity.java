@@ -183,7 +183,10 @@ public class rouletteActivity extends AppCompatActivity {
 
     public class CircleManager extends View {
         private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        private int[] COLORS = {Color.RED, Color.GREEN, Color.BLUE, Color.CYAN, Color.MAGENTA, Color.GRAY};
+        private int[] COLORS = {Color.parseColor("#FFFF7F50"), Color.parseColor("#FF3CB371"), Color.parseColor("#FF6495ED"),
+                Color.parseColor("#FFADD8E6"), Color.parseColor("#FFDDA0DD"), Color.GRAY};
+//        private int[] COLORS = {Color.parseColor("#FFFF7F50"), Color.parseColor("#FF3CB371"), Color.parseColor("FF6495ED"),
+//                Color.parseColor("FFFFDAB9"), Color.parseColor("FFDA70D6"), Color.parseColor("#FFFFFFFF")};
         private int num;
 
         public CircleManager(Context context, int num) {
