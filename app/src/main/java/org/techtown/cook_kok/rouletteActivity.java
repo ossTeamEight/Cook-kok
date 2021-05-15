@@ -23,11 +23,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class rouletteActivity extends AppCompatActivity {
+public class rouletteActivity extends AppCompatActivity {//돌림판을 누르면 바로 랜덤으로 6가지, 추천을 받고 올 경우 (intent?)로 string arraylist를 받아 그 음식들로 6가지
     private CircleManager circleManager;
     private RelativeLayout layoutRoulette;
 
-    private Button btnDrawRoulette5;
     private Button btnDrawRoulette6;
     private Button btnRotate;
     private TextView tvResult;
@@ -43,19 +42,9 @@ public class rouletteActivity extends AppCompatActivity {
 
         tvResult = findViewById(R.id.tvResult);
         btnRotate = findViewById(R.id.btnRotate);
-//        btnDrawRoulette5 = findViewById(R.id.btnDrawRoulette5);
         btnDrawRoulette6 = findViewById(R.id.btnDrawRoulette6);
         layoutRoulette = findViewById(R.id.layoutRoulette);
 
-//        btnDrawRoulette5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                num_roulette = 5;
-//                STRINGS = setRandom(1000, num_roulette);
-//                circleManager = new CircleManager(rouletteActivity.this, num_roulette);
-//                layoutRoulette.addView(circleManager);
-//            }
-//        });
 
         btnDrawRoulette6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,24 +114,7 @@ public class rouletteActivity extends AppCompatActivity {
 
         Log.d("roulette", "getResult : " + angle);
 
-        if (num_roulette == 5) {
-            if (angle > 342 || angle <= 54) { // 11   2
-                text = STRINGS.get(3);
-                buildAlert(text);
-            } else if (angle > 54 && angle <= 126) { // 333   3
-                text = STRINGS.get(2);
-                buildAlert(text);
-            } else if (angle > 126 && angle <= 198) { // 222   4
-                text = STRINGS.get(1);
-                buildAlert(text);
-            } else if (angle > 198 && angle <= 270) { // 111    0
-                text = STRINGS.get(0);
-                buildAlert(text);
-            } else if (angle > 270 && angle <= 342) { // 22     1
-                text = STRINGS.get(4);
-                buildAlert(text);
-            }
-        } else if (num_roulette == 6) {
+        if (num_roulette == 6) {
             if (angle > 330 || angle <= 30) { // 22
                 text = STRINGS.get(4);
                 buildAlert(text);
@@ -163,14 +135,14 @@ public class rouletteActivity extends AppCompatActivity {
                 buildAlert(text);
             }
         }
-        tvResult.setText("Result : " + text);
+        tvResult.setText("오늘의 식사 "+text+"!");
     }
 
     // if you want use AlertDialog then use this
     private void buildAlert(String text) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Congratulations")
-                .setMessage("You have earned " + text + " points!")
+        builder.setTitle("바꾸기 금지!")
+                .setMessage(text + " 당첨!!")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener(){
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

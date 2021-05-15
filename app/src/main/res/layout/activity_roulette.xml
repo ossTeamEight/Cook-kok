@@ -5,25 +5,11 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-<!--        <Button-->
-<!--            android:id="@+id/btnDrawRoulette5"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="number of case : 5" />-->
-
-        <Button
-            android:id="@+id/btnDrawRoulette6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="number of case : 6" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnDrawRoulette6"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="음식 가져오기" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -52,7 +38,7 @@
         android:id="@+id/btnRotate"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:text="spin"
+        android:text="돌리자"
         android:layout_centerInParent="true" />
 
     <TextView
@@ -60,7 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Result : "
+        android:gravity="center"
+        android:text="결과\n"
         android:textSize="32sp"/>
 
 </LinearLayout>
