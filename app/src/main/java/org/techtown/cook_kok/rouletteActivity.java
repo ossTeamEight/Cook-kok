@@ -56,6 +56,7 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
                 }
                 circleManager = new CircleManager(rouletteActivity.this, num_roulette);
                 layoutRoulette.addView(circleManager);
+                btnDrawRoulette6.setVisibility(View.INVISIBLE);
             }
         });
 
