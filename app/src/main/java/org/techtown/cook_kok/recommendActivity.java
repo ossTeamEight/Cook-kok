@@ -2,16 +2,19 @@ package org.techtown.cook_kok;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+//import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class recommendActivity extends AppCompatActivity {
 
     Button btn_no_text;
     Button btn_yes_text;
     Button btn_dontNo_text;
+    ImageView test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +26,8 @@ public class recommendActivity extends AppCompatActivity {
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(recommendActivity.this, recommendActivity1.class);
-                startActivities(intent); //액티비티 이동.
+               //Intent intent = new Intent(recommendActivity.this, recommendActivity1.class);
+                //startActivities(intent); //액티비티 이동.
             }
         });
 
@@ -32,8 +35,8 @@ public class recommendActivity extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(recommendActivity.this, recommendActivity1.class);
-                startActivities(intent); //액티비티 이동.
+                //Intent intent = new Intent(recommendActivity.this, recommendActivity1.class);
+                //startActivities(intent); //액티비티 이동.
             }
         });
 
@@ -41,9 +44,19 @@ public class recommendActivity extends AppCompatActivity {
         btn_dontNo_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(recommendActivity.this, recommendActivity1.class);
-                startActivities(intent); //액티비티 이동.
+                //Intent intent = new Intent(recommendActivity.this, recommendActivity1.class);
+                //startActivities(intent); //액티비티 이동.
             }
         });
+
+        test = (ImageView)findViewById(R.id.test);
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"저는 누르는게 아니에요!",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
     }
 }
