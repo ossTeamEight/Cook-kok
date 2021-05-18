@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 public class recommendActivity extends AppCompatActivity {
 
     Button btn_no_text;
@@ -49,7 +51,9 @@ public class recommendActivity extends AppCompatActivity {
             }
         });
 
+
         test = (ImageView)findViewById(R.id.test);
+        Glide.with(this).load(R.raw.sprit_image).into(test);
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
