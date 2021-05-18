@@ -16,7 +16,8 @@ public class recommendActivity extends AppCompatActivity {
     Button btn_no_text;
     Button btn_yes_text;
     Button btn_dontNo_text;
-    ImageView test;
+    ImageView sprit;
+    ImageView balloon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +53,22 @@ public class recommendActivity extends AppCompatActivity {
         });
 
 
-        test = (ImageView)findViewById(R.id.test);
-        Glide.with(this).load(R.raw.sprit_image).into(test);
-        test.setOnClickListener(new View.OnClickListener() {
+        sprit = (ImageView)findViewById(R.id.sprit);
+        Glide.with(this).load(R.raw.sprit_image).into(sprit);
+        sprit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"저는 누르는게 아니에요!",Toast.LENGTH_SHORT).show();
             }
         });
 
+        balloon = (ImageView)findViewById(R.id.balloon);
+        balloon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 }
