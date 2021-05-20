@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.161" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/korea"
         android:layout_width="169dp"
         android:layout_height="111dp"
         android:layout_marginTop="52dp"
@@ -29,13 +29,14 @@
         android:cropToPadding="true"
         android:onClick="onClick01"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/korea_picture" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/china"
         android:layout_width="169dp"
         android:layout_height="111dp"
         android:layout_marginTop="52dp"
@@ -45,48 +46,48 @@
         android:onClick="onClick02"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/korea"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/china_picture" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/japan"
         android:layout_width="169dp"
         android:layout_height="111dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/일식"
         android:cropToPadding="true"
         android:onClick="onClick03"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/korea"
         app:srcCompat="@drawable/japan_picture" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/western"
         android:layout_width="169dp"
         android:layout_height="111dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/양식"
         android:cropToPadding="true"
         android:onClick="onClick04"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/pizza_picture" />
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/japan"
+        app:layout_constraintTop_toBottomOf="@+id/china"
+        app:srcCompat="@drawable/western_picture" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/others"
         android:layout_width="169dp"
         android:layout_height="111dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/기타"
         android:cropToPadding="true"
@@ -94,7 +95,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/japan"
         app:srcCompat="@drawable/others_picture" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
