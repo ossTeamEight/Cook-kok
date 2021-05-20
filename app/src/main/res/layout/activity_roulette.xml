@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center|top"
+    android:orientation="vertical">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/sharp_label_black_18dp2" />
+        android:background="@drawable/neon_pick"
+        android:rotationX="180" />
 
     <RelativeLayout
         android:id="@+id/layoutRoulette"
@@ -32,6 +33,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/init_roulette"
             android:text="음식 가져오기"
+            android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
     </RelativeLayout>
@@ -40,8 +42,9 @@
         android:id="@+id/btnRotate"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:text="돌리자"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="돌리자" />
 
     <TextView
         android:id="@+id/tvResult"
@@ -50,6 +53,6 @@
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="결과\n"
-        android:textSize="32sp"/>
+        android:textSize="32sp" />
 
 </LinearLayout>
