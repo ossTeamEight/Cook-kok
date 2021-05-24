@@ -7,4 +7,7 @@
     <string name="일식">일식</string>
     <string name="양식">양식</string>
     <string name="기타">기타</string>
+    <string name="돌림판">돌림판</string>
+    <string name="한번_사진으로_골라보세요">한번 사진으로 골라보세요!</string>
+    <string name="COOK_COK">COOK-COK</string>
 </resources>
