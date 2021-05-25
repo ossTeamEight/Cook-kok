@@ -4,73 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".listActivity">
+    tools:context=".listActivity"
+    tools:showIn="@layout/activity_list">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/음식점_list"
+        android:text="@string/음식추천"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="15dp"
-        android:onClick="onClick01"
-        android:text="@string/한식"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+    <ImageButton
+        android:id="@+id/korea"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/한식"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/korea_picture" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="1dp"
-        android:onClick="onClick02"
-        android:text="@string/중식"
+    <ImageButton
+        android:id="@+id/china"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/중식"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/korea"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/china_picture" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
-        android:onClick="onClick03"
-        android:text="@string/일식"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="onClick04"
-        android:text="@string/양식"
+    <ImageButton
+        android:id="@+id/japan"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/일식"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/korea"
+        app:srcCompat="@drawable/japan_picture" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:onClick="onClick05"
-        android:text="@string/기타"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+    <ImageButton
+        android:id="@+id/western"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/양식"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/japan"
+        app:layout_constraintTop_toBottomOf="@+id/china"
+        app:srcCompat="@drawable/western_picture" />
+
+    <ImageButton
+        android:id="@+id/others"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/기타"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/japan"
+        app:srcCompat="@drawable/others_picture" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
