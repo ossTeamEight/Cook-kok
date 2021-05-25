@@ -64,3 +64,87 @@ public class recommendActivity extends AppCompatActivity {
 
     }
 }
+
+
+//class ListNode {
+//	String spicy_data;
+//	String soup_data;
+//	String rice_data;
+//	ListNode rlink;
+//	ListNode llink;
+//}
+//
+//class DoubleLinkedList {
+//	private ListNode head;
+//	private ListNode tail;
+//
+//	public DoubleLinkedList() {
+//		head = tail = null;
+//	}
+//
+//	public void addNode(String spicy_data, String soup_data, String rice_data) {
+//		ListNode newNode = new ListNode();
+//		newNode.spicy_data = spicy_data;
+//		newNode.soup_data = soup_data;
+//		newNode.rice_data = rice_data;
+//		newNode.rlink = null;
+//
+//		if (head == null) {  // 처음으로 항이 추가되는 경우
+//			head = tail = newNode;
+//		} else {
+//			tail.rlink = newNode;
+//			newNode.llink = tail;
+//			tail = newNode;  // 마지막을 가리키는 항을 재지정
+//		}
+//	}
+//
+//	public void deleteNode() {
+//		for(ListNode p = head; p != null; p = p.rlink) {
+//			if(!p.spicy_data.equals("T")) { //첫번째 질문에서 참을 골랐을 때 데이터가 "T"가 아니면
+//				if(p.llink == null) { // p == head
+//					head = head.rlink;
+//					head.llink = null;
+//				}
+//				else if(p.rlink == null) { // p == tail
+//					tail = p.llink;
+//					tail.rlink = null;
+//				}
+//				else {
+//					p.llink.rlink = p.rlink;
+//					p.rlink.llink = p.llink;
+//				}
+//			}
+//
+//			//------------------------------------------------------------------------//
+//
+//			if(!p.spicy_data.equals("F")) { //첫번째 질문에서 거짓을 골랐을 때 데이터가 "F"가 아니면
+//				if(p.llink == null) { // p == head
+//					head = head.rlink;
+//					head.llink = null;
+//				}
+//				else if(p.rlink == null) { // p == tail
+//					tail = p.llink;
+//					tail.rlink = null;
+//				}
+//				else {
+//					p.llink.rlink = p.rlink;
+//					p.rlink.llink = p.llink;
+//				}
+//			}
+//		}
+//	}
+//	// 이 deletNode 메소드를 질문 3개에 대해 실행하면, 3번의 메소드를 거친 리스트가 나온다.
+//	// 이를 ListView 형태로 recommedAcivity4 에 넣는다.
+//}
+//
+//
+//class Main {
+//
+//	public static void main(String[] args) throws Exception {
+//
+//		// LinkedList 생성
+//		DoubleLinkedList raman = new DoubleLinkedList();
+//		raman.addNode("T", "T", "F"); // 이걸 50개를 만든다.
+//
+//	}
+//}

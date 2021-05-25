@@ -23,6 +23,7 @@ public class recommendActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommend2);
 
+
         btn_no_text = findViewById(R.id.btn_no_text);
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
