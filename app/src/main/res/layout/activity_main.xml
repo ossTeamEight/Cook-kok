@@ -4,32 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="top"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/list"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="음식점 리스트" />
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/recommend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="음식 추천: 쿡 콕!" />
+        <Button
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="음식 메뉴" />
 
-    <Button
-        android:id="@+id/show"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="new" />
+        <Button
+            android:id="@+id/recommend"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="음식 추천: 쿡 콕!" />
 
-    <Button
-        android:id="@+id/roulette"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="(돌림판 개발 시도)" />
+        <Button
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="new" />
+
+        <Button
+            android:id="@+id/roulette"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="돌림판" />
+    </LinearLayout>
 
 </LinearLayout>
