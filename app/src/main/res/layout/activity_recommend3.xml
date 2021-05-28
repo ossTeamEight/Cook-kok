@@ -40,7 +40,7 @@
         android:src="@raw/sprit_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <ImageView
         android:id="@+id/balloon"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -71,8 +71,8 @@
         android:layout_marginLeft="4dp"
         android:layout_marginBottom="8dp"
         android:text="밥이랑 같이먹는"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4" />
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@+id/textView1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
