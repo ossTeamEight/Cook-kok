@@ -17,8 +17,6 @@ public class recommendActivity2 extends AppCompatActivity {
     Button btn_yes_text;
     ImageView sprit;
     ImageView balloon;
-    Intent intent = getIntent();
-    String[] value = intent.getStringArrayExtra("value");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +27,14 @@ public class recommendActivity2 extends AppCompatActivity {
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                value[1] = "F";
-                Intent intent = new Intent(recommendActivity2.this,recommendActivity3.class);
-                intent.putExtra("value", value);
-                startActivity(intent); //액티비티 이동.
+                Intent intent1 = getIntent();
+                String answer1 = intent1.getStringExtra("answer1");
+
+                String answer2 = "F";
+                Intent intent2 = new Intent(recommendActivity2.this,recommendActivity3.class);
+                intent2.putExtra("answer1", answer1);
+                intent2.putExtra("answer2", answer2);
+                startActivity(intent2); //액티비티 이동.
             }
         });
 
@@ -40,10 +42,14 @@ public class recommendActivity2 extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                value[1] = "T";
-                Intent intent = new Intent(recommendActivity2.this,recommendActivity3.class);
-                intent.putExtra("value", value);
-                startActivity(intent); //액티비티 이동.
+                Intent intent1 = getIntent();
+                String answer1 = intent1.getStringExtra("answer1");
+
+                String answer2 = "T";
+                Intent intent2 = new Intent(recommendActivity2.this,recommendActivity3.class);
+                intent2.putExtra("answer1", answer1);
+                intent2.putExtra("answer2", answer2);
+                startActivity(intent2); //액티비티 이동.
             }
         });
         ;

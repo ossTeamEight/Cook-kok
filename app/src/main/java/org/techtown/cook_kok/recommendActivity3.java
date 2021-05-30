@@ -17,8 +17,6 @@ public class recommendActivity3 extends AppCompatActivity {
     Button btn_yes_text;
     ImageView sprit;
     ImageView balloon;
-    Intent intent = getIntent();
-    String[] value = intent.getStringArrayExtra("value");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +27,16 @@ public class recommendActivity3 extends AppCompatActivity {
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                value[2] = "F";
-                Intent intent = new Intent(recommendActivity3.this,recommendActivity4.class);
-                intent.putExtra("value", value);
-                startActivity(intent); //액티비티 이동.
+                Intent intent2 = getIntent();
+                String answer1 = intent2.getStringExtra("answer1");
+                String answer2 = intent2.getStringExtra("answer2");
+
+                String answer3 = "F";
+                Intent intent3 = new Intent(recommendActivity3.this,recommendActivity4.class);
+                intent3.putExtra("answer1", answer1);
+                intent3.putExtra("answer2", answer2);
+                intent3.putExtra("answer3", answer3);
+                startActivity(intent3); //액티비티 이동.
             }
         });
 
@@ -40,10 +44,16 @@ public class recommendActivity3 extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                value[2] = "T";
-                Intent intent = new Intent(recommendActivity3.this,recommendActivity4.class);
-                intent.putExtra("value", value);
-                startActivity(intent); //액티비티 이동.
+                Intent intent2 = getIntent();
+                String answer1 = intent2.getStringExtra("answer1");
+                String answer2 = intent2.getStringExtra("answer2");
+
+                String answer3 = "T";
+                Intent intent3 = new Intent(recommendActivity3.this,recommendActivity4.class);
+                intent3.putExtra("answer1", answer1);
+                intent3.putExtra("answer2", answer2);
+                intent3.putExtra("answer3", answer3);
+                startActivity(intent3); //액티비티 이동.
             }
         });
 

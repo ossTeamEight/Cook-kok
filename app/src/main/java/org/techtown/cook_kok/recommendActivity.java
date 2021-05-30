@@ -20,8 +20,6 @@ public class recommendActivity extends AppCompatActivity {
     Button btn_yes_text;
     ImageView sprit;
     ImageView balloon;
-	private String[] value;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +31,10 @@ public class recommendActivity extends AppCompatActivity {
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            	value = new String[10];
-            	value[0] = "F";
-                Intent intent = new Intent(recommendActivity.this,recommendActivity2.class);
-                intent.putExtra("value", value);
-                startActivity(intent); //액티비티 이동.
+                String answer1 = "F";
+                Intent intent1 = new Intent(recommendActivity.this,recommendActivity2.class);
+                intent1.putExtra("answer1", answer1);
+                startActivity(intent1); //액티비티 이동.
             }
         });
 
@@ -45,11 +42,10 @@ public class recommendActivity extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-				value = new String[10];
-				value[0] = "T";
-				Intent intent = new Intent(recommendActivity.this,recommendActivity2.class);
-				intent.putExtra("value", value);
-                startActivity(intent); //액티비티 이동.
+                String answer1 = "T";
+                Intent intent1 = new Intent(recommendActivity.this,recommendActivity2.class);
+                intent1.putExtra("answer1", answer1);
+                startActivity(intent1); //액티비티 이동.
             }
         });
         ;
