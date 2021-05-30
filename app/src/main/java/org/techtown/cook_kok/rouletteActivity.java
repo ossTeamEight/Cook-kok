@@ -34,7 +34,8 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
     private ArrayList<String> STRINGS;
     private float initAngle = 0.0f;
     private int num_roulette;
-    String[] s_array = {"짜장면","짬뽕","탕수육","깐풍기","마라탕","볶음밥"};
+    String[] s_array = {"0","1","2","3","4"}; //intent로 받아오기
+    //String[] s_array = {"짜장면","짬뽕","탕수육","깐풍기","마라탕","볶음밥"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +50,7 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
         btnDrawRoulette6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                num_roulette = 6;
+                num_roulette = s_array.length;
                 STRINGS = new ArrayList<>();
                 for(int i = 0; i<s_array.length;i++){
                     STRINGS.add(s_array[i]);
@@ -88,21 +89,6 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
         layout.startAnimation(rotateAnimation);
     }
 
-    // Set numbers on roulette to random
-//    public ArrayList<String> setRandom(int maxNumber, int num) {
-//        ArrayList<String> strings = new ArrayList<>();
-//
-//        double r = Math.random();
-//
-//        for (int i = 0; i < num; i++) {
-//            int rand = (int) (r * maxNumber);
-//            strings.add(String.valueOf(rand));
-//            r = Math.random();
-//        }
-//
-//        return strings;
-//    }
-
     // get Angle to random
     private int getRandom(int maxNumber) {
         double r = Math.random();
@@ -115,27 +101,95 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
 
         Log.d("roulette", "getResult : " + angle);
 
-        if (num_roulette == 6) {
-            if (angle > 330 || angle <= 30) { // 22
-                text = STRINGS.get(4);
-                buildAlert(text);
-            } else if (angle > 30 && angle <= 90) { // 11
-                text = STRINGS.get(3);
-                buildAlert(text);
-            } else if (angle > 90 && angle <= 150) { // 333
-                text = STRINGS.get(2);
-                buildAlert(text);
-            } else if (angle > 150 && angle <= 210) { // 222
-                text = STRINGS.get(1);
-                buildAlert(text);
-            } else if (angle > 210 && angle <= 270) { // 111
-                text = STRINGS.get(0);
-                buildAlert(text);
-            } else if (angle > 270 && angle <= 330) { // 3
-                text = STRINGS.get(5);
-                buildAlert(text);
-            }
+        switch(num_roulette){
+            case 2:
+                if(angle > 90 && angle <= 270) {
+                    text = STRINGS.get(0);
+                    buildAlert(text);
+                }
+                else if (angle > 270 || angle <= 90){
+                    text = STRINGS.get(1);
+                    buildAlert(text);
+                }
+                break;
+            case 3:
+                if (angle > 270 || angle <= 30) {
+                    text = STRINGS.get(2);
+                    buildAlert(text);
+                }
+                else if (angle > 30 && angle <= 150){
+                    text =STRINGS.get(1);
+                    buildAlert(text);
+                }
+                else if (angle > 150 && angle <= 270){
+                    text = STRINGS.get(0);
+                    buildAlert(text);
+                }
+                break;
+            case 4:
+                if (angle >= 270) {
+                    text = STRINGS.get(3);
+                    buildAlert(text);
+                }
+                else if (angle >= 180 && angle < 270){
+                    text =STRINGS.get(0);
+                    buildAlert(text);
+                }
+                else if (angle >= 90 && angle < 180){
+                    text = STRINGS.get(1);
+                    buildAlert(text);
+                }
+                else if (angle < 90){
+                    text = STRINGS.get(2);
+                    buildAlert(text);
+                }
+                break;
+            case 5:
+                if (angle > 270 && angle <= 342) {
+                    text = STRINGS.get(4);
+                    buildAlert(text);
+                }
+                else if (angle > 198 && angle <= 270){
+                    text =STRINGS.get(0);
+                    buildAlert(text);
+                }
+                else if (angle > 126 && angle <= 198){
+                    text = STRINGS.get(1);
+                    buildAlert(text);
+                }
+                else if (angle > 54 && angle <= 126){
+                    text = STRINGS.get(2);
+                    buildAlert(text);
+                }
+                else if (angle <= 54 || angle > 342){
+                    text = STRINGS.get(3);
+                    buildAlert(text);
+                }
+                break;
+            case 6:
+                if (angle > 330 || angle <= 30) {
+                    text = STRINGS.get(4);
+                    buildAlert(text);
+                } else if (angle > 30 && angle <= 90) {
+                    text = STRINGS.get(3);
+                    buildAlert(text);
+                } else if (angle > 90 && angle <= 150) {
+                    text = STRINGS.get(2);
+                    buildAlert(text);
+                } else if (angle > 150 && angle <= 210) {
+                    text = STRINGS.get(1);
+                    buildAlert(text);
+                } else if (angle > 210 && angle <= 270) {
+                    text = STRINGS.get(0);
+                    buildAlert(text);
+                } else if (angle > 270 && angle <= 330) {
+                    text = STRINGS.get(5);
+                    buildAlert(text);
+                }
+                break;
+                //확장가능
         }
+
         tvResult.setText("오늘의 식사 "+text+"!");
     }
 
