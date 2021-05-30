@@ -23,14 +23,16 @@ public class recommendActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommend3);
 
+        Intent intent2 = getIntent();
+
+        Bundle bundle = intent2.getExtras();
+        final String answer1 = bundle.getString("answer1");
+        final String answer2 = bundle.getString("answer2");
+
         btn_no_text = findViewById(R.id.btn_no_text);
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = getIntent();
-                String answer1 = intent2.getStringExtra("answer1");
-                String answer2 = intent2.getStringExtra("answer2");
-
                 String answer3 = "F";
                 Intent intent3 = new Intent(recommendActivity3.this,recommendActivity4.class);
                 intent3.putExtra("answer1", answer1);
@@ -44,10 +46,6 @@ public class recommendActivity3 extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = getIntent();
-                String answer1 = intent2.getStringExtra("answer1");
-                String answer2 = intent2.getStringExtra("answer2");
-
                 String answer3 = "T";
                 Intent intent3 = new Intent(recommendActivity3.this,recommendActivity4.class);
                 intent3.putExtra("answer1", answer1);

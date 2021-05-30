@@ -23,13 +23,15 @@ public class recommendActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommend2);
 
+        Intent intent1 = getIntent();
+
+        Bundle bundle = intent1.getExtras();
+        final String answer1 = bundle.getString("answer1");
+
         btn_no_text = findViewById(R.id.btn_no_text);
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = getIntent();
-                String answer1 = intent1.getStringExtra("answer1");
-
                 String answer2 = "F";
                 Intent intent2 = new Intent(recommendActivity2.this,recommendActivity3.class);
                 intent2.putExtra("answer1", answer1);
@@ -42,9 +44,6 @@ public class recommendActivity2 extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = getIntent();
-                String answer1 = intent1.getStringExtra("answer1");
-
                 String answer2 = "T";
                 Intent intent2 = new Intent(recommendActivity2.this,recommendActivity3.class);
                 intent2.putExtra("answer1", answer1);
@@ -53,7 +52,6 @@ public class recommendActivity2 extends AppCompatActivity {
             }
         });
         ;
-
 
         sprit = (ImageView)findViewById(R.id.sprit);
         Glide.with(this).load(R.raw.sprit_image).into(sprit);

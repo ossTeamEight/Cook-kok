@@ -18,9 +18,11 @@ public class recommendActivity4 extends AppCompatActivity {
         textView = findViewById(R.id.textView);
 
         Intent intent3 = getIntent();
-        String answer1 = intent3.getStringExtra("answer1");
-        String answer2 = intent3.getStringExtra("answer2");
-        String answer3 = intent3.getStringExtra("answer3");
+
+        Bundle bundle = intent3.getExtras();
+        String answer1 = bundle.getString("answer1");
+        String answer2 = bundle.getString("answer2");
+        String answer3 = bundle.getString("answer3");
 
         textView.setText(answer1 + "/" + answer2+ "/" + answer3);
     }

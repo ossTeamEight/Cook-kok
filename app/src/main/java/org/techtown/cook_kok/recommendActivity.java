@@ -31,7 +31,7 @@ public class recommendActivity extends AppCompatActivity {
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String answer1 = "F";
+                String answer1 = "F"; //
                 Intent intent1 = new Intent(recommendActivity.this,recommendActivity2.class);
                 intent1.putExtra("answer1", answer1);
                 startActivity(intent1); //액티비티 이동.
