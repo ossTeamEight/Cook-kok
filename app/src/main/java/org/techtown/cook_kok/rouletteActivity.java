@@ -27,6 +27,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class rouletteActivity extends AppCompatActivity {//돌림판을 누르면 바로 랜덤으로 6가지, 추천을 받고 올 경우 (intent?)로 string arraylist를 받아 그 음식들로 6가지
     private CircleManager circleManager;
@@ -39,17 +40,18 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
     private ArrayList<String> STRINGS;
     private float initAngle = 0.0f;
     private int num_roulette;
-    //String[] s_array = {"배고파","배안고파"}; //intent로 받아오기
-    String[] s_array = {"짜장면","짬뽕","탕수육","깐풍기","마라탕","볶음밥"};
+    String[] s_array = {"짜장면","짬뽕"}; //intent로 받아오기
+    //String[] s_array = {"짜장면","짬뽕","탕수육","깐풍기","마라탕","볶음밥"};
+    
+    int[] id_array = {R.drawable.c7, R.drawable.c8};
+
 
     Dialog myDialog;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roulette);
-
         tvResult = findViewById(R.id.tvResult);
         btnRotate = findViewById(R.id.btnRotate);
         btnDrawRoulette = findViewById(R.id.btnDrawRoulette);
@@ -114,86 +116,86 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
             case 2:
                 if(angle > 90 && angle <= 270) {
                     text = STRINGS.get(0);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle > 270 || angle <= 90){
                     text = STRINGS.get(1);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 break;
             case 3:
                 if (angle > 270 || angle <= 30) {
                     text = STRINGS.get(2);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle > 30 && angle <= 150){
                     text =STRINGS.get(1);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle > 150 && angle <= 270){
                     text = STRINGS.get(0);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 break;
             case 4:
                 if (angle >= 270) {
                     text = STRINGS.get(3);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle >= 180 && angle < 270){
                     text =STRINGS.get(0);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle >= 90 && angle < 180){
                     text = STRINGS.get(1);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle < 90){
                     text = STRINGS.get(2);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 break;
             case 5:
                 if (angle > 270 && angle <= 342) {
                     text = STRINGS.get(4);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle > 198 && angle <= 270){
                     text =STRINGS.get(0);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle > 126 && angle <= 198){
                     text = STRINGS.get(1);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle > 54 && angle <= 126){
                     text = STRINGS.get(2);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 else if (angle <= 54 || angle > 342){
                     text = STRINGS.get(3);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 break;
             case 6:
                 if (angle > 330 || angle <= 30) {
                     text = STRINGS.get(4);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 } else if (angle > 30 && angle <= 90) {
                     text = STRINGS.get(3);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 } else if (angle > 90 && angle <= 150) {
                     text = STRINGS.get(2);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 } else if (angle > 150 && angle <= 210) {
                     text = STRINGS.get(1);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 } else if (angle > 210 && angle <= 270) {
                     text = STRINGS.get(0);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 } else if (angle > 270 && angle <= 330) {
                     text = STRINGS.get(5);
-                    ShowPopup(text + " 당첨!");
+                    ShowPopup(text);
                 }
                 break;
                 //확장가능
@@ -205,12 +207,13 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
     public void ShowPopup(String text){
         TextView txtclose, cookname;
         ImageView cookimage;
-
         myDialog.setContentView(R.layout.activity_roulette_result);
         cookname = myDialog.findViewById(R.id.cook_name);
-        cookname.setText(text);
+        cookname.setText(text+" 당첨!");
         cookimage = myDialog.findViewById(R.id.cook_image);
-        cookimage.setImageResource(R.drawable.c1);
+
+        int index = Arrays.binarySearch(s_array,text);
+        cookimage.setImageResource(id_array[index]);
 
         txtclose=(TextView) myDialog.findViewById(R.id.txtclose);
         txtclose.setOnClickListener(new View.OnClickListener() {
