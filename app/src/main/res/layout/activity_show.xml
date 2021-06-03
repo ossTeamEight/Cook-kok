@@ -32,7 +32,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/baloo"
-        android:text="@string/COOK_COK"
+        android:text="@string/COOK_COK" android:textColor="#A000BC"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:text="@string/한번_사진으로_골라보세요"
+        android:textColor="#A000BC"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />

@@ -13,7 +13,7 @@
         android:id="@+id/txtclose"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:textColor="#000000"
+        android:textColor="#A000BC"
         android:text="@string/X"
         android:textStyle="bold"
         android:layout_gravity="end"
