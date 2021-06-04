@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button_recommend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RecommendActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RecommendQ1Activity.class);
                 startActivity(intent);
             }
         });

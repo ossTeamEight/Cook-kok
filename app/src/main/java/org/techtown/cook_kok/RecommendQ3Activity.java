@@ -11,10 +11,10 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-public class RecommendActivity3 extends AppCompatActivity {
+public class RecommendQ3Activity extends AppCompatActivity {
 
-    Button btn_no_text;
-    Button btn_yes_text;
+    Button btn_no;
+    Button btn_yes;
     ImageView sprit;
     ImageView balloon;
     Intent intent2;
@@ -22,19 +22,19 @@ public class RecommendActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recommend3);
+        setContentView(R.layout.activity_recommend_question3);
 
         intent2 = getIntent();
 
-        btn_no_text = findViewById(R.id.btn_no_text);
-        btn_no_text.setOnClickListener(new View.OnClickListener() {
+        btn_no = findViewById(R.id.btn_no);
+        btn_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bundle bundle = intent2.getExtras();
                 String answer1 = bundle.getString("answer1");
                 String answer2 = bundle.getString("answer2");
                 String answer3 = "F";
-                Intent intent3 = new Intent(RecommendActivity3.this, RecommendActivity4.class);
+                Intent intent3 = new Intent(RecommendQ3Activity.this, RecommendResultActivity.class);
                 intent3.putExtra("answer1", answer1);
                 intent3.putExtra("answer2", answer2);
                 intent3.putExtra("answer3", answer3);
@@ -42,15 +42,15 @@ public class RecommendActivity3 extends AppCompatActivity {
             }
         });
 
-        btn_yes_text = findViewById(R.id.btn_yes_text);
-        btn_yes_text.setOnClickListener(new View.OnClickListener() {
+        btn_yes = findViewById(R.id.btn_yes);
+        btn_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bundle bundle = intent2.getExtras();
                 String answer1 = bundle.getString("answer1");
                 String answer2 = bundle.getString("answer2");
                 String answer3 = "T";
-                Intent intent3 = new Intent(RecommendActivity3.this, RecommendActivity4.class);
+                Intent intent3 = new Intent(RecommendQ3Activity.this, RecommendResultActivity.class);
                 intent3.putExtra("answer1", answer1);
                 intent3.putExtra("answer2", answer2);
                 intent3.putExtra("answer3", answer3);

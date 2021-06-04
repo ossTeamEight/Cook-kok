@@ -12,36 +12,36 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-public class RecommendActivity extends AppCompatActivity {
+public class RecommendQ1Activity extends AppCompatActivity {
 
-    Button btn_no_text;
-    Button btn_yes_text;
+    Button btn_no;
+    Button btn_yes;
     ImageView sprit;
     ImageView balloon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recommend);
+        setContentView(R.layout.activity_recommend_question1);
 
 
-        btn_no_text = findViewById(R.id.btn_no_text);
-        btn_no_text.setOnClickListener(new View.OnClickListener() {
+        btn_no = findViewById(R.id.btn_no);
+        btn_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String answer1 = "F"; //
-                Intent intent1 = new Intent(RecommendActivity.this, RecommendActivity2.class);
+                Intent intent1 = new Intent(RecommendQ1Activity.this, RecommendQ2Activity.class);
                 intent1.putExtra("answer1", answer1);
                 startActivity(intent1); //액티비티 이동.
             }
         });
 
-        btn_yes_text = findViewById(R.id.btn_yes_text);
-        btn_yes_text.setOnClickListener(new View.OnClickListener() {
+        btn_yes = findViewById(R.id.btn_yes);
+        btn_yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String answer1 = "T";
-                Intent intent1 = new Intent(RecommendActivity.this, RecommendActivity2.class);
+                Intent intent1 = new Intent(RecommendQ1Activity.this, RecommendQ2Activity.class);
                 intent1.putExtra("answer1", answer1);
                 startActivity(intent1); //액티비티 이동.
             }
