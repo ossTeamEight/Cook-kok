@@ -14,7 +14,7 @@ public class List_japan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_japan_food);
+        setContentView(R.layout.activity_list_grid_view);
         simpleList = (GridView) findViewById(R.id.simpleGridView);
         foodList.add(new Item("냉모밀",R.drawable.j1));
         foodList.add(new Item("돈까스",R.drawable.j2));
@@ -27,7 +27,7 @@ public class List_japan extends AppCompatActivity {
         foodList.add(new Item("회",R.drawable.j9));
         foodList.add(new Item("회덮밥",R.drawable.j10));
 
-        FoodAdapter myAdapter=new FoodAdapter(this,R.layout.grid_view_items, foodList);
+        FoodAdapter myAdapter=new FoodAdapter(this,R.layout.activity_list_grid_view_form, foodList);
         if(simpleList != null) {
             simpleList.setAdapter(myAdapter);
         }

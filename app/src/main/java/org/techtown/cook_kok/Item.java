@@ -9,12 +9,12 @@ public class Item {
         this.foodListImage =foodimage;
         this.foodListName =foodname;
     }
-    public String getbirdName()
+    public String getfoodName()
     {
         return foodListName;
     }
 
-    public int getbirdImage()
+    public int getfoodImage()
     {
         return foodListImage;
     }

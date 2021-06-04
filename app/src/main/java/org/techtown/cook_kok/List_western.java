@@ -14,7 +14,7 @@ public class List_western extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_western_food);
+        setContentView(R.layout.activity_list_grid_view);
         simpleList = (GridView) findViewById(R.id.simpleGridView);
         foodList.add(new Item("라자냐",R.drawable.w1));
         foodList.add(new Item("브리또",R.drawable.w2));
@@ -27,7 +27,7 @@ public class List_western extends AppCompatActivity {
         foodList.add(new Item("피자",R.drawable.w9));
         foodList.add(new Item("햄버거",R.drawable.w10));
 
-        FoodAdapter myAdapter=new FoodAdapter(this,R.layout.grid_view_items, foodList);
+        FoodAdapter myAdapter=new FoodAdapter(this,R.layout.activity_list_grid_view_form, foodList);
         if(simpleList != null) {
             simpleList.setAdapter(myAdapter);
         }

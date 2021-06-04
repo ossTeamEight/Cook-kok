@@ -28,11 +28,11 @@ public class FoodAdapter extends ArrayAdapter {
 
         View v = convertView;
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        v = inflater.inflate(R.layout.grid_view_items, null);
+        v = inflater.inflate(R.layout.activity_list_grid_view_form, null);
         TextView textView = (TextView) v.findViewById(R.id.textView);
         ImageView imageView = (ImageView) v.findViewById(R.id.imageView);
-        textView.setText(foodList.get(position).getbirdName());
-        imageView.setImageResource(foodList.get(position).getbirdImage());
+        textView.setText(foodList.get(position).getfoodName());
+        imageView.setImageResource(foodList.get(position).getfoodImage());
         return v;
     }
 }
