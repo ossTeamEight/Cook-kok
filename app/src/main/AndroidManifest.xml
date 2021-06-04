@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recommendActivity4" />
-        <activity android:name=".recommendActivity3" />
-        <activity android:name=".recommendActivity2" />
+        <activity android:name=".RecommendResultActivity"></activity>
+        <activity android:name=".RecommendQ1Activity" />
+        <activity android:name=".RecommendQ2Activity" />
+        <activity android:name=".RecommendQ3Activity" />
         <activity android:name=".showActivity" />
         <activity android:name=".rouletteActivity" />
-        <activity android:name=".recommendActivity" />
         <activity android:name=".listActivity" />
-        <activity android:name=".List_korea" />
-        <activity android:name=".List_china" />
-        <activity android:name=".List_japan" />
-        <activity android:name=".List_western" />
-        <activity android:name=".List_others" />
+        <activity android:name=".List_korea"></activity>
+        <activity android:name=".List_china"></activity>
+        <activity android:name=".List_japan"></activity>
+        <activity android:name=".List_western"></activity>
+        <activity android:name=".List_others"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
