@@ -8,57 +8,6 @@
     android:backgroundTint="@color/white"
     tools:context=".MainActivity">
 
-
-    <!--<Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/choi_button1"
-        android:backgroundTint="#EDB8B8"
-        android:onClick="onButton2Clicked"
-        android:text="치킨          "
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/choi_button1"
-        android:backgroundTint="#EDB8B8"
-        android:onClick="onButton2Clicked"
-        android:text="떡볶이         "
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="632dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/choi_button1"
-        android:backgroundTint="#B1EA84"
-        android:onClick="onButton3Clicked"
-        android:text="네이버 룰렛"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="처음화면으로 돌아가기"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        tools:layout_editor_absoluteY="632dp" />-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -83,7 +32,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/baloo"
-        android:text="@string/COOK_COK"
+        android:text="@string/COOK_COK" android:textColor="#A000BC"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:text="@string/한번_사진으로_골라보세요"
+        android:textColor="#A000BC"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -144,8 +94,8 @@
                 <ImageButton
                     android:onClick="ShowPopup"
                     android:id="@+id/imageView4"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_centerHorizontal="true"
                     android:scaleType="centerCrop"
                     android:padding="0dp"
@@ -176,9 +126,12 @@
                     android:textSize="24sp"
                     tools:ignore="DuplicateIds" />
 
-                <ImageView
+                <ImageButton
+                    android:onClick="ShowPopup2"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
                     android:id="@+id/imageView5"
-                    android:layout_width="85dp"
+                    android:layout_width="100dp"
                     android:layout_height="85dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
@@ -218,10 +171,13 @@
                     android:text="@string/양식"
                     android:textSize="24sp" />
 
-                <ImageView
+                <ImageButton
+                    android:onClick="ShowPopup3"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
                     android:id="@+id/imageView6"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="93dp"
+                    android:layout_height="80dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
                     app:srcCompat="@drawable/foodphoto_yangsik"
@@ -249,9 +205,12 @@
                     android:text="@string/일식"
                     android:textSize="24sp" />
 
-                <ImageView
+                <ImageButton
+                    android:onClick="ShowPopup4"
+                    android:scaleType="centerCrop"
+                    android:padding="5dp"
                     android:id="@+id/imageView7"
-                    android:layout_width="85dp"
+                    android:layout_width="150dp"
                     android:layout_height="85dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
@@ -290,7 +249,10 @@
                     android:text="@string/기타"
                     android:textSize="24sp" />
 
-                <ImageView
+                <ImageButton
+                    android:onClick="ShowPopup5"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
                     android:id="@+id/imageView8"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
@@ -318,10 +280,13 @@
                     android:layout_below="@id/imageView9"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
-                    android:text="@string/돌림판"
+                    android:text="@string/랜덤게임"
                     android:textSize="24sp" />
 
-                <ImageView
+                <ImageButton
+                    android:onClick="ShowPopup6"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
                     android:id="@+id/imageView9"
                     android:layout_width="85dp"
                     android:layout_height="85dp"

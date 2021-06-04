@@ -22,7 +22,7 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout_1_1"
+        android:id="@+id/linearLayout_2_1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -36,22 +36,22 @@
             android:layout_weight="1"
             app:cardCornerRadius="10dp"
 
-        >
+            >
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_1"
+                    android:id="@+id/button_2_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/김밥"
+                    android:text="@string/탕수육"
                     android:textSize="30sp"
-                    android:onClick="onButton_1_1_Clicked"/>
+                    android:onClick="onButton_2_1_Clicked"/>
 
             </RelativeLayout>
 
@@ -59,7 +59,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_2"
+        android:id="@+id/linearLayout_2_2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -78,16 +78,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_2"
+                    android:id="@+id/button_2_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/김치찌개"
+                    android:text="@string/볶음밥"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_2_Clicked"/>
+                    android:onClick="onButton_2_2_Clicked"/>
 
             </RelativeLayout>
 
@@ -95,7 +95,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_3"
+        android:id="@+id/linearLayout_2_3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -114,16 +114,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_3"
+                    android:id="@+id/button_2_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/보쌈"
+                    android:text="@string/깐풍기"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_3_Clicked"/>
+                    android:onClick="onButton_2_3_Clicked"/>
 
             </RelativeLayout>
 
@@ -131,7 +131,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_4"
+        android:id="@+id/linearLayout_2_4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -150,16 +150,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button1_4"
+                    android:id="@+id/button2_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/부대찌개"
+                    android:text="@string/팔보채"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_4_Clicked"/>
+                    android:onClick="onButton_2_4_Clicked"/>
 
             </RelativeLayout>
 
@@ -167,7 +167,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_5"
+        android:id="@+id/linearLayout_2_5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -186,16 +186,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_5"
+                    android:id="@+id/button_2_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/비빔밥"
+                    android:text="@string/양장피"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_5_Clicked"/>
+                    android:onClick="onButton_2_5_Clicked"/>
 
             </RelativeLayout>
 
@@ -203,7 +203,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_6"
+        android:id="@+id/linearLayout_2_6"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -222,16 +222,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_6"
+                    android:id="@+id/button_2_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/뼈해장국"
+                    android:text="@string/짬뽕"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_6_Clicked"/>
+                    android:onClick="onButton_2_6_Clicked"/>
 
             </RelativeLayout>
 
@@ -239,7 +239,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_7"
+        android:id="@+id/linearLayout_2_7"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -258,16 +258,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_7"
+                    android:id="@+id/button_2_7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/순대국"
+                    android:text="@string/마라탕"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_7_Clicked"/>
+                    android:onClick="onButton_2_7_Clicked"/>
 
             </RelativeLayout>
 
@@ -275,7 +275,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_8"
+        android:id="@+id/linearLayout_2_8"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -294,16 +294,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_8"
+                    android:id="@+id/button_2_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/제육볶음"
+                    android:text="@string/짜장면"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_8_Clicked"/>
+                    android:onClick="onButton_2_8_Clicked"/>
 
             </RelativeLayout>
 
@@ -311,7 +311,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_9"
+        android:id="@+id/linearLayout_2_9"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -330,16 +330,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_9"
+                    android:id="@+id/button_2_9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/족발"
+                    android:text="@string/잡채"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_9_Clicked"/>
+                    android:onClick="onButton_2_9_Clicked"/>
 
             </RelativeLayout>
 
@@ -347,7 +347,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/linearLayout_1_10"
+        android:id="@+id/linearLayout_2_10"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
@@ -366,16 +366,16 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_1_10"
+                    android:id="@+id/button_2_10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
-                    android:text="@string/죽"
+                    android:text="@string/양꼬치"
 
                     android:textSize="30sp"
-                    android:onClick="onButton_1_10_Clicked"/>
+                    android:onClick="onButton_2_10_Clicked"/>
 
             </RelativeLayout>
 
