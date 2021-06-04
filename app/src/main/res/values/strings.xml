@@ -18,11 +18,61 @@
     <string name="제육볶음">제육볶음</string>
     <string name="족발">족발</string>
     <string name="죽">죽</string>
+
+    <string name="라자냐">라자냐</string>
+    <string name="브리또">브리또</string>
+    <string name="샌드위치">샌드위치</string>
+    <string name="샐러드">샐러드</string>
+    <string name="스테이크">스테이크</string>
+    <string name="스파게티">스파게티</string>
+    <string name="오믈렛">오믈렛</string>
+    <string name="크림파스타">크림파스타</string>
+    <string name="피자">피자</string>
+    <string name="햄버거">햄버거</string>
+
+    <string name="탕수육">탕수육</string>
+    <string name="볶음밥">볶음밥</string>
+    <string name="깐풍기">깐풍기</string>
+    <string name="팔보채">팔보채</string>
+    <string name="양장피">양장피</string>
+    <string name="짬뽕">짬뽕</string>
+    <string name="마라탕">마라탕</string>
+    <string name="짜장면">짜장면</string>
+    <string name="잡채">잡채</string>
+    <string name="양꼬치">양꼬치</string>
+
+    <string name="돈까스">돈까스</string>
+    <string name="알밥">알밥</string>
+    <string name="캘리포니아롤">캘리포니아롤</string>
+    <string name="연어롤">연어롤</string>
+    <string name="초밥">초밥</string>
+    <string name="회">회</string>
+    <string name="회덮밥">회덮밥</string>
+    <string name="냉모밀">냉모밀</string>
+    <string name="우동">우동</string>
+    <string name="매운탕">매운탕</string>
+
+    <string name="떡볶이">떡볶이</string>
+    <string name="라면">라면 </string>
+    <string name="샤브샤브">샤브샤브</string>
+    <string name="쌀국수">쌀국수</string>
+    <string name="우육면">우육면</string>
+    <string name="치킨">치킨</string>
+    <string name="커리">커리</string>
+    <string name="파니니">파니니</string>
+    <string name="파히타">파히타</string>
+    <string name="팟타이">팟타이</string>
+
+    <string name="랜덤게임">랜덤게임</string>
+    <string name="당첨자추첨">당첨자추첨</string>
+    <string name="사다리게임">사다리게임</string>
+    <string name="제비뽑기">제비뽑기</string>
+    <string name="화살표돌리기">화살표돌리기</string>
+
     <string name="COOK_COK">COOK_COK</string>
     <string name="한번_사진으로_골라보세요">한번 사진으로 골라보세요</string>
     <string name="돌림판">돌림판</string>
-    <string name="치킨">치킨</string>
-    <string name="피자">피자</string>
     <string name="X">X</string>
+
 
 </resources>

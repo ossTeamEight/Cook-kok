@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".RecommendResultActivity">
 
+
     <Button
         android:id="@+id/btn_roulette"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
         android:text="룰렛 돌려줘"
-        app:layout_constraintEnd_toStartOf="@+id/btn_recommend"
-        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sprit" />
 
@@ -22,46 +22,39 @@
         android:id="@+id/btn_recommend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:text="다시 할래"
-        app:layout_constraintBottom_toTopOf="@+id/btn_show"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toEndOf="@+id/btn_roulette"
         app:layout_constraintTop_toBottomOf="@+id/sprit" />
 
     <Button
         android:id="@+id/btn_show"
-        android:layout_width="187dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="206dp"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
         android:text="음식 리스트 가기"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_roulette"
-        app:layout_constraintStart_toEndOf="@+id/btn_roulette"
-        app:layout_constraintTop_toBottomOf="@+id/text_foodlist" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_roulette"
+        tools:layout_editor_absoluteX="111dp" />
 
     <ImageView
         android:id="@+id/sprit"
         android:layout_width="371dp"
         android:layout_height="0dp"
-        android:layout_marginTop="79dp"
         android:src="@raw/sprit_image"
-        app:layout_constraintBottom_toTopOf="@+id/btn_recommend"
-        app:layout_constraintEnd_toEndOf="@+id/btn_roulette"
-        app:layout_constraintStart_toEndOf="@+id/btn_roulette"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_foodlist" />
 
     <TextView
         android:id="@+id/text_foodlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="79dp"
-        android:layout_marginBottom="381dp"
         android:text="음식목록"
-        app:layout_constraintBottom_toTopOf="@+id/btn_show"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="79dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
