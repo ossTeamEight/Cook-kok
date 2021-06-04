@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/btn_no_text"
+        android:id="@+id/btn_no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
@@ -16,16 +16,16 @@
         android:layout_marginBottom="89dp"
         android:text="아니요"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_yes_text" />
+        app:layout_constraintStart_toEndOf="@+id/btn_yes" />
 
     <Button
-        android:id="@+id/btn_yes_text"
+        android:id="@+id/btn_yes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginLeft="88dp"
         android:text="네"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn_no_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_no"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -40,7 +40,7 @@
         android:src="@raw/sprit_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <ImageView
         android:id="@+id/balloon"
@@ -53,15 +53,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="매운 음식이 땡기나요?"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="음식이 땡기나요?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginBottom="8dp"
+        android:text="국물 있는"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@+id/textView1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
