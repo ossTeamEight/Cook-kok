@@ -19,16 +19,8 @@
         android:background="#00000000"
         android:orientation="vertical">
 
-        <!--        <Button-->
-        <!--            android:id="@+id/btn_rotate"-->
-        <!--            android:layout_width="65dp"-->
-        <!--            android:layout_height="65dp"-->
-        <!--            android:text="돌리기"-->
-        <!--            android:layout_centerInParent="true"-->
-        <!--            android:background="@drawable/button_selector"/>-->
-
         <Button
-            android:id="@+id/btnDrawRoulette6"
+            android:id="@+id/btnDrawRoulette"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/init_roulette"
