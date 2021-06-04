@@ -6,13 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
-import java.util.ArrayList;
+public class RecommendActivity4 extends AppCompatActivity {
 
-public class recommendActivity4 extends AppCompatActivity {
-
-    Button roulette;
+    //TextView textView;
+    Button btn_roulette;
+    String name = "";
+    String[] foodlist;
 
     class ListNode {
         String spicy_data;
@@ -53,12 +53,14 @@ public class recommendActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommend4);
 
+        //textView = findViewById(R.id.textView7);
+
         Intent intent3 = getIntent();
 
         Bundle bundle = intent3.getExtras();
-        final String answer1 = bundle.getString("answer1");
-        final String answer2 = bundle.getString("answer2");
-        final String answer3 = bundle.getString("answer3");
+        String answer1 = bundle.getString("answer1");
+        String answer2 = bundle.getString("answer2");
+        String answer3 = bundle.getString("answer3");
 
         DoubleLinkedList food = new DoubleLinkedList();
         food.addNode("c1", "T", "F", "F");
@@ -114,36 +116,18 @@ public class recommendActivity4 extends AppCompatActivity {
 
         for(ListNode p = food.head; p != null; p = p.rlink) {
             if (p.spicy_data.equals(answer1) && p.soup_data.equals(answer2) && p.rice_data.equals(answer3)) {
-                p.food_name;
+                name += (p.food_name + "/");
             }
         }
+        foodlist = name.split("/");
 
-
-
-        roulette = findViewById(R.id.roulette);
-        roulette.setOnClickListener(new View.OnClickListener() {
+        btn_roulette = findViewById(R.id.btn_roulette);
+        btn_roulette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(recommendActivity4.this, rouletteActivity.class);
+                Intent intent4 = new Intent(RecommendActivity4.this, rouletteActivity.class);
                 startActivity(intent4);
             }
         });
     }
 }
-
-//    public void findFood() {
-//        for(ListNode p = food.head; p != null; p = p.rlink) {
-//            if(!p.spicy_data.equals("T")) { //첫번째 질문에서 참을 골랐을 때 데이터가 "T"가 아니면
-//                if(p.llink == null) { // p == head
-//                    food.head = food.head.rlink;
-//                    food.head.llink = null;
-//                }
-//                else if(p.rlink == null) { // p == tail
-//                    food.tail = p.llink;
-//                    food.tail.rlink = null;
-//                }
-//                else {
-//                    p.llink.rlink = p.rlink;
-//                    p.rlink.llink = p.llink;
-//                }
-//            }

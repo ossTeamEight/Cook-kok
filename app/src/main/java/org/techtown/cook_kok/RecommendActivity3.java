@@ -11,32 +11,34 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-public class recommendActivity2 extends AppCompatActivity {
+public class RecommendActivity3 extends AppCompatActivity {
 
     Button btn_no_text;
     Button btn_yes_text;
     ImageView sprit;
     ImageView balloon;
+    Intent intent2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recommend2);
+        setContentView(R.layout.activity_recommend3);
 
-        Intent intent1 = getIntent();
-
-        Bundle bundle = intent1.getExtras();
-        final String answer1 = bundle.getString("answer1");
+        intent2 = getIntent();
 
         btn_no_text = findViewById(R.id.btn_no_text);
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String answer2 = "F";
-                Intent intent2 = new Intent(recommendActivity2.this,recommendActivity3.class);
-                intent2.putExtra("answer1", answer1);
-                intent2.putExtra("answer2", answer2);
-                startActivity(intent2); //액티비티 이동.
+                Bundle bundle = intent2.getExtras();
+                String answer1 = bundle.getString("answer1");
+                String answer2 = bundle.getString("answer2");
+                String answer3 = "F";
+                Intent intent3 = new Intent(RecommendActivity3.this, RecommendActivity4.class);
+                intent3.putExtra("answer1", answer1);
+                intent3.putExtra("answer2", answer2);
+                intent3.putExtra("answer3", answer3);
+                startActivity(intent3); //액티비티 이동.
             }
         });
 
@@ -44,21 +46,25 @@ public class recommendActivity2 extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String answer2 = "T";
-                Intent intent2 = new Intent(recommendActivity2.this,recommendActivity3.class);
-                intent2.putExtra("answer1", answer1);
-                intent2.putExtra("answer2", answer2);
-                startActivity(intent2); //액티비티 이동.
+                Bundle bundle = intent2.getExtras();
+                String answer1 = bundle.getString("answer1");
+                String answer2 = bundle.getString("answer2");
+                String answer3 = "T";
+                Intent intent3 = new Intent(RecommendActivity3.this, RecommendActivity4.class);
+                intent3.putExtra("answer1", answer1);
+                intent3.putExtra("answer2", answer2);
+                intent3.putExtra("answer3", answer3);
+                startActivity(intent3); //액티비티 이동.
             }
         });
-        ;
+
 
         sprit = (ImageView)findViewById(R.id.sprit);
         Glide.with(this).load(R.raw.sprit_image).into(sprit);
         sprit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"저는 누르는게 아니라구요!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"그만 눌러요...",Toast.LENGTH_SHORT).show();
             }
         });
 

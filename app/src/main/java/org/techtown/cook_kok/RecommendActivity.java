@@ -2,6 +2,7 @@ package org.techtown.cook_kok;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+//import android.content.Intent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-public class recommendActivity3 extends AppCompatActivity {
+public class RecommendActivity extends AppCompatActivity {
 
     Button btn_no_text;
     Button btn_yes_text;
@@ -21,24 +22,17 @@ public class recommendActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recommend3);
+        setContentView(R.layout.activity_recommend);
 
-        Intent intent2 = getIntent();
-
-        Bundle bundle = intent2.getExtras();
-        final String answer1 = bundle.getString("answer1");
-        final String answer2 = bundle.getString("answer2");
 
         btn_no_text = findViewById(R.id.btn_no_text);
         btn_no_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String answer3 = "F";
-                Intent intent3 = new Intent(recommendActivity3.this,recommendActivity4.class);
-                intent3.putExtra("answer1", answer1);
-                intent3.putExtra("answer2", answer2);
-                intent3.putExtra("answer3", answer3);
-                startActivity(intent3); //액티비티 이동.
+                String answer1 = "F"; //
+                Intent intent1 = new Intent(RecommendActivity.this, RecommendActivity2.class);
+                intent1.putExtra("answer1", answer1);
+                startActivity(intent1); //액티비티 이동.
             }
         });
 
@@ -46,14 +40,13 @@ public class recommendActivity3 extends AppCompatActivity {
         btn_yes_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String answer3 = "T";
-                Intent intent3 = new Intent(recommendActivity3.this,recommendActivity4.class);
-                intent3.putExtra("answer1", answer1);
-                intent3.putExtra("answer2", answer2);
-                intent3.putExtra("answer3", answer3);
-                startActivity(intent3); //액티비티 이동.
+                String answer1 = "T";
+                Intent intent1 = new Intent(RecommendActivity.this, RecommendActivity2.class);
+                intent1.putExtra("answer1", answer1);
+                startActivity(intent1); //액티비티 이동.
             }
         });
+        ;
 
 
         sprit = (ImageView)findViewById(R.id.sprit);
@@ -61,7 +54,7 @@ public class recommendActivity3 extends AppCompatActivity {
         sprit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"그만 눌러요...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"저는 누르는게 아니에요!",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -69,8 +62,8 @@ public class recommendActivity3 extends AppCompatActivity {
         balloon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         });
+
     }
 }
