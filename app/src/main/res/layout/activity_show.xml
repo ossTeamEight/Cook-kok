@@ -23,7 +23,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@android:drawable/ic_menu_revert" />
+            app:navigationIcon="@drawable/background_roulette" />
 
         <TextView
         android:id="@+id/textView"
@@ -34,6 +34,7 @@
         android:fontFamily="@font/baloo"
         android:text="@string/COOK_COK" android:textColor="#A000BC"
         android:textSize="30sp"
+
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
