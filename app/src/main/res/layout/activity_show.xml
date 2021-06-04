@@ -280,7 +280,7 @@
                     android:layout_below="@id/imageView9"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
-                    android:text="@string/돌림판"
+                    android:text="@string/랜덤게임"
                     android:textSize="24sp" />
 
                 <ImageButton

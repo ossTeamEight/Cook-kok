@@ -304,4 +304,21 @@ public class showActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=%ED%8C%9F%ED%83%80%EC%9D%B4&tbm=isch&ved=2ahUKEwj-wu-ioffwAhXNzosBHQ_VABMQ2-cCegQIABAA&oq=%ED%8C%9F%ED%83%80%EC%9D%B4&gs_lcp=CgNpbWcQDDICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIAFD-N1j-N2DrPGgAcAB4AIABaIgBaJIBAzAuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=qJa2YP7OG82dr7wPj6qDmAE&bih=937&biw=1920"));
         startActivity(intent);
     }
+
+    public void onButton_6_1_Clicked(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&query=당첨자추첨&ie=utf8"));
+        startActivity(intent);
+    }
+    public void onButton_6_2_Clicked(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&query=사다리게임&ie=utf8"));
+        startActivity(intent);
+    }
+    public void onButton_6_3_Clicked(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&query=제비뽑기&ie=utf8"));
+        startActivity(intent);
+    }
+    public void onButton_6_4_Clicked(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&query=화살표돌리기&ie=utf8"));
+        startActivity(intent);
+    }
 }

@@ -63,7 +63,11 @@
     <string name="파히타">파히타</string>
     <string name="팟타이">팟타이</string>
 
-
+    <string name="랜덤게임">랜덤게임</string>
+    <string name="당첨자추첨">당첨자추첨</string>
+    <string name="사다리게임">사다리게임</string>
+    <string name="제비뽑기">제비뽑기</string>
+    <string name="화살표돌리기">화살표돌리기</string>
 
     <string name="COOK_COK">COOK_COK</string>
     <string name="한번_사진으로_골라보세요">한번 사진으로 골라보세요</string>
