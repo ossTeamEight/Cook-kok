@@ -32,12 +32,14 @@
 
     <Button
         android:id="@+id/btnRotate"
-        android:layout_width="match_parent"
+        android:layout_width="280dp"
         android:layout_height="65dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:background="@color/btn_light"
-        android:text="돌리자" />
+        android:layout_marginTop="50dp"
+        android:text="돌려줘!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/button_background"/>
 
     <TextView
         android:id="@+id/tvResult"

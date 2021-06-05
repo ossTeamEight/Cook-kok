@@ -18,25 +18,24 @@
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="음식 메뉴" />
+            android:text="음식 메뉴"
+            />
 
         <Button
             android:id="@+id/recommend"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="음식 추천: 쿡 콕!" />
+            android:layout_marginTop="5dp"
+            android:text="쿡 콕!" />
 
         <Button
             android:id="@+id/show"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="new" />
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="기타" />
 
-        <Button
-            android:id="@+id/roulette"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:text="돌림판" />
     </LinearLayout>
 
 </LinearLayout>
