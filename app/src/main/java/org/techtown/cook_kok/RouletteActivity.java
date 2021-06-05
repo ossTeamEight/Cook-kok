@@ -27,6 +27,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Random;
+import java.util.Set;
 
 public class RouletteActivity extends AppCompatActivity {//돌림판을 누르면 바로 랜덤으로 6가지, 추천을 받고 올 경우 (intent?)로 string arraylist를 받아 그 음식들로 6가지
     private CircleManager circleManager;
@@ -39,11 +43,23 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
     private ArrayList<String> STRINGS;
     private float initAngle = 0.0f;
     private int num_roulette;
-    String[] s_array = {"짜장면","짬뽕"}; //intent로 받아오기
-    //String[] s_array = {"짜장면","짬뽕","탕수육","깐풍기","마라탕","볶음밥"};
-    
-    int[] id_array = {R.drawable.c7, R.drawable.c8};
+    String[] m_array = {"짜장면","짬뽕","볶음밥","양꼬치","팔보채","잡채","마라탕","깐풍기","양장피","라조기",
+            "냉모밀","돈까스","매운탕","알밥","연어롤","우동","초밥","캘리포니아롤","회","회덮밥",
+            "김밥","김치찌개","보쌈","부대찌개","비빔밥","뼈해장국","순대국","제육볶음","족발","죽",
+            "떡볶이","라면","샤브샤브","쌀국수","파니니","우육면","치킨","커리","파히니","팟타이",
+            "라자냐","브리또","샌드위치","샐러드","스테이크","스파게티","오믈렛","크림파스타","피자","햄버거"};
 
+    int[] id_array = {R.drawable.c7, R.drawable.c8,R.drawable.c3,R.drawable.c4,R.drawable.c5,
+            R.drawable.c6,R.drawable.c2,R.drawable.c1,R.drawable.c9,R.drawable.c10,
+            R.drawable.j1,R.drawable.j2,R.drawable.j3,R.drawable.j4,R.drawable.j5,
+            R.drawable.j6,R.drawable.j7,R.drawable.j8,R.drawable.j9,R.drawable.j10,
+            R.drawable.k1,R.drawable.k2,R.drawable.k3,R.drawable.k4,R.drawable.k5,
+            R.drawable.k6,R.drawable.k7,R.drawable.k8,R.drawable.k9,R.drawable.k10,
+            R.drawable.o1,R.drawable.o2,R.drawable.o3,R.drawable.o4,R.drawable.o5,
+            R.drawable.o6,R.drawable.o7,R.drawable.o8,R.drawable.o9,R.drawable.o10,
+            R.drawable.w1,R.drawable.w2,R.drawable.w3,R.drawable.w4,R.drawable.w5,
+            R.drawable.w6,R.drawable.w7,R.drawable.w8,R.drawable.w9,R.drawable.w10};
+    String[] s_array;
 
     Dialog myDialog;
 
@@ -57,20 +73,39 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
         layoutRoulette = findViewById(R.id.layoutRoulette);
         myDialog=new Dialog(this);
 
-//        Intent intent_roulette = getIntent();
-//        Bundle bundle = intent_roulette.getExtras();
-//        String food_names = bundle.getString("food_names");
-//        s_array = food_names.split(",",2);
-//        System.out.println(food_names);
-//        System.out.println(s_array);
+        Intent intent_roulette = getIntent();
+        Bundle bundle = intent_roulette.getExtras();
+
+        String food_names = bundle.getString("name");
+        food_names = food_names.substring(0, food_names.length()-1);
+        System.out.println(food_names);
+        s_array = food_names.split(",");
+        System.out.println(s_array);
         btnDrawRoulette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                num_roulette = s_array.length;
+//*******************목록이 6개 넘을 시, 랜덤 값으로 룰렛 개수 최대 6개를 맞춤******************************
                 STRINGS = new ArrayList<>();
-                for(int i = 0; i<s_array.length;i++){
-                    STRINGS.add(s_array[i]);
+                if(s_array.length > 6) {
+                    num_roulette = 6;
+                    Set<Integer> set = new HashSet<>();
+                    Random r = new Random();
+
+                    while (set.size() < 6){
+                        int i = r.nextInt(s_array.length);
+                        set.add(i);
+                    }
+                    Iterator<Integer> it = set.iterator();
+                    while(it.hasNext())
+                        STRINGS.add(s_array[it.next()]);
                 }
+                else {
+                    num_roulette = s_array.length;
+                    for(int i = 0; i<num_roulette;i++){
+                        STRINGS.add(s_array[i]);
+                    }
+                }
+//**************************************************************************************************
                 circleManager = new CircleManager(RouletteActivity.this, num_roulette);
                 layoutRoulette.addView(circleManager);
                 btnDrawRoulette.setVisibility(View.INVISIBLE);
@@ -217,7 +252,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
         cookname.setText(text+" 당첨!");
         cookimage = myDialog.findViewById(R.id.cook_image);
 
-        int index = Arrays.binarySearch(s_array,text);
+        int index = Arrays.binarySearch(m_array,text);
         cookimage.setImageResource(id_array[index]);
 
         txtclose=(TextView) myDialog.findViewById(R.id.txtclose);
@@ -231,26 +266,11 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
         myDialog.show();
     }
 
-    // if you want use AlertDialog then use this
-    private void buildAlert(String text) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("바꾸기 금지!")
-                .setMessage(text + " 당첨!!")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener(){
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        layoutRoulette.setRotation(360 - initAngle);
-                    }
-                });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-    }
-
     public class CircleManager extends View {
         private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 //        private int[] COLORS = {Color.parseColor("#FFFF7F50"), Color.parseColor("#FF3CB371"), Color.parseColor("#FF6495ED"),
 //                Color.parseColor("#FFADD8E6"), Color.parseColor("#FFDDA0DD"), Color.GRAY};
-        private int[] COLORS = {Color.parseColor("#FFDA70D6"), Color.parseColor("#FFDDA0DD")};
+        private int[] COLORS = {Color.parseColor("#FF9575CD"), Color.parseColor("#FFB39DDB")};
         private int num;
 
         public CircleManager(Context context, int num) {
@@ -276,7 +296,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
             int temp = 0;
 
             for (int i = 0; i < num; i++) {
-                paint.setColor(COLORS[i]);
+                paint.setColor(COLORS[i%2]);
                 paint.setStyle(Paint.Style.FILL_AND_STROKE);
                 paint.setAntiAlias(true);
                 paint.setTextAlign(Paint.Align.CENTER);
@@ -299,6 +319,20 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
                 temp += sweepAngle;
             }
         }
+    }
+    // if you want use AlertDialog then use this
+    private void buildAlert(String text) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("바꾸기 금지!")
+                .setMessage(text + " 당첨!!")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        layoutRoulette.setRotation(360 - initAngle);
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 
 
