@@ -237,7 +237,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
                     ShowPopup(text);
                 }
                 break;
-                //확장가능
+            //확장가능
         }
 
         tvResult.setText("오늘의 식사 "+text+"!");
@@ -270,7 +270,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
 
     public class CircleManager extends View {
         private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-//        private int[] COLORS = {Color.parseColor("#FFFF7F50"), Color.parseColor("#FF3CB371"), Color.parseColor("#FF6495ED"),
+        //        private int[] COLORS = {Color.parseColor("#FFFF7F50"), Color.parseColor("#FF3CB371"), Color.parseColor("#FF6495ED"),
 //                Color.parseColor("#FFADD8E6"), Color.parseColor("#FFDDA0DD"), Color.GRAY};
         private int[] COLORS = {Color.parseColor("#FF9575CD"), Color.parseColor("#FFB39DDB")};
         private int num;

@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button button_roulette = (Button) findViewById(R.id.roulette);
-//        button_roulette.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), RouletteActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button button_roulette = (Button) findViewById(R.id.roulette);
+        button_roulette.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RouletteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

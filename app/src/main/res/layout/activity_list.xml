@@ -1,154 +1,264 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ListActivity"
-    tools:showIn="@layout/activity_list">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/음식추천"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/korea"
-        android:layout_width="175dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="60dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/한식"
-        android:cropToPadding="true"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/korea_picture" />
-    <TextView
-        android:id="@+id/korea_text"
-        android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView0_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/baloo"
+                android:text="@string/COOK_COK"
+                android:textColor="@color/mid_purple"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView0_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="18dp"
+                android:layout_alignBaseline="@id/textView0_0"
+                android:text="음식추천_메뉴리스트"
+                android:textColor="@color/mid_purple" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="15dp"
+            android:rotation="-90"
+            app:srcCompat="@drawable/tableware_pic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/한식"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/korea"
-        app:layout_constraintVertical_bias="0.025" />
+        android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/china"
-        android:layout_width="175dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="60dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/중식"
-        android:cropToPadding="true"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toEndOf="@+id/korea"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/china_picture" />
-    <TextView
-        android:id="@+id/china_text"
-        android:layout_width="wrap_content"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:cardUseCompatPadding="true" >
+
+            <RelativeLayout
+                android:id="@+id/in1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/korea"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:setBrigtness="2"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/korea_picture" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="한식"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:cardUseCompatPadding="true" >
+
+            <RelativeLayout
+                android:id="@+id/in2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/china"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/china_picture" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="중식"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/중식"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/china"
-        app:layout_constraintVertical_bias="0.025" />
+        android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/japan"
-        android:layout_width="175dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/일식"
-        android:cropToPadding="true"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/korea"
-        app:srcCompat="@drawable/japan_picture" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:cardUseCompatPadding="true" >
 
-    <TextView
-        android:id="@+id/japan_text"
-        android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/in3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/japan"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/japan_picture" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="일식"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:cardUseCompatPadding="true" >
+
+            <RelativeLayout
+                android:id="@+id/in4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/western"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/western_picture" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="양식"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="@string/일식"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.249"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/japan"
-        app:layout_constraintVertical_bias="0.038" />
+        android:layout_gravity="center_horizontal">
 
-    <ImageButton
-        android:id="@+id/western"
-        android:layout_width="175dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/양식"
-        android:cropToPadding="true"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toEndOf="@+id/japan"
-        app:layout_constraintTop_toBottomOf="@+id/china"
-        app:srcCompat="@drawable/western_picture" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:cardUseCompatPadding="true" >
 
-    <TextView
-        android:id="@+id/western_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/양식"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/western"
-        app:layout_constraintVertical_bias="0.034" />
+            <RelativeLayout
+                android:id="@+id/in5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/others"
-        android:layout_width="175dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/기타"
-        android:cropToPadding="true"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/japan"
-        app:srcCompat="@drawable/others_picture" />
+                <ImageButton
+                    android:id="@+id/others"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/others_picture" />
 
-    <TextView
-        android:id="@+id/others_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/기타"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/others"
-        app:layout_constraintVertical_bias="0.153" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="기타"
+                    android:textSize="22dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
