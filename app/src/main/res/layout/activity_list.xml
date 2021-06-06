@@ -91,7 +91,7 @@
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:text="한식"
-                    android:textSize="23dp" />
+                    android:textSize="22dp" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -129,7 +129,7 @@
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:text="중식"
-                    android:textSize="23dp" />
+                    android:textSize="22dp" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -173,7 +173,7 @@
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:text="일식"
-                    android:textSize="23dp" />
+                    android:textSize="22dp" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -211,7 +211,7 @@
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:text="양식"
-                    android:textSize="23dp" />
+                    android:textSize="22dp" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -255,7 +255,7 @@
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:text="기타"
-                    android:textSize="23dp" />
+                    android:textSize="22dp" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
