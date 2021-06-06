@@ -142,7 +142,7 @@ public class RecommendResultActivity extends AppCompatActivity {
         btn_roulette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_roulette = new Intent(RecommendResultActivity.this, rouletteActivity.class);
+                Intent intent_roulette = new Intent(RecommendResultActivity.this, RouletteActivity.class);
                 intent_roulette.putExtra("foodlist", foodlist);
                 startActivity(intent_roulette);
 
@@ -153,7 +153,7 @@ public class RecommendResultActivity extends AppCompatActivity {
         btn_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_show = new Intent(RecommendResultActivity.this, showActivity.class);
+                Intent intent_show = new Intent(RecommendResultActivity.this, ShowActivity.class);
                 startActivity(intent_show);
             }
         });

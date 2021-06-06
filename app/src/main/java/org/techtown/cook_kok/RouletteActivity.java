@@ -24,12 +24,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class rouletteActivity extends AppCompatActivity {//돌림판을 누르면 바로 랜덤으로 6가지, 추천을 받고 올 경우 (intent?)로 string arraylist를 받아 그 음식들로 6가지
+public class RouletteActivity extends AppCompatActivity {//돌림판을 누르면 바로 랜덤으로 6가지, 추천을 받고 올 경우 (intent?)로 string arraylist를 받아 그 음식들로 6가지
     private CircleManager circleManager;
     private RelativeLayout layoutRoulette;
 
@@ -66,7 +64,7 @@ public class rouletteActivity extends AppCompatActivity {//돌림판을 누르�
                 for(int i = 0; i<s_array.length;i++){
                     STRINGS.add(s_array[i]);
                 }
-                circleManager = new CircleManager(rouletteActivity.this, num_roulette);
+                circleManager = new CircleManager(RouletteActivity.this, num_roulette);
                 layoutRoulette.addView(circleManager);
                 btnDrawRoulette.setVisibility(View.INVISIBLE);
             }

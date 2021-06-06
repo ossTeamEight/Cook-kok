@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class showActivity extends AppCompatActivity {
+public class ShowActivity extends AppCompatActivity {
     Dialog myDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +138,10 @@ public class showActivity extends AppCompatActivity {
     }
     public void onButton_1_10_Clicked(View view){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=%EC%A3%BD&tbm=isch&ved=2ahUKEwidoeC-m_fwAhVXB6YKHRDtBR0Q2-cCegQIABAA&oq=%EC%A3%BD&gs_lcp=CgNpbWcQAzIFCAAQsQMyBQgAELEDMgUIABCxAzICCAAyAggAMgIIADICCAAyAggAMgUIABCxAzICCABQjl5Yjl5gvGZoAHAAeACAAWCIAWCSAQExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=mJC2YJ31EteOmAWQ2pfoAQ&bih=937&biw=1920"));
+        startActivity(intent);
+    }
+    public void onButton_1_11_Clicked(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=%EC%98%A4%EC%82%BC%EB%B6%88%EA%B3%A0%EA%B8%B0&source=lnms&tbm=isch&sa=X&ved=2ahUKEwisxYqyhYLxAhWINZQKHTNWAiYQ_AUoAXoECAEQAw&biw=1503&bih=927"));
         startActivity(intent);
     }
 

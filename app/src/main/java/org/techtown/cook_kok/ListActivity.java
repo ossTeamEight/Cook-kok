@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.os.Bundle;
 
-public class listActivity extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity {
 
 
     @Override
