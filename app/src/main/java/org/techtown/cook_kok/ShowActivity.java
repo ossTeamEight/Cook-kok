@@ -381,5 +381,4 @@ public class ShowActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.search.naver.com/search.naver?where=m&sm=mtb_etc&query=화살표돌리기&ie=utf8"));
         startActivity(intent);
     }
-    
 }
