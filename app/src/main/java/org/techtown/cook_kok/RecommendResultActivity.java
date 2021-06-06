@@ -123,7 +123,7 @@ public class RecommendResultActivity extends AppCompatActivity {
             }
         }
         text_foodlist = findViewById(R.id.text_foodlist);
-        text_foodlist.setText(food_names + " " + "이중에 먹어!");
+        text_foodlist.setText(food_names + "\n" + "이중에 먹어!");
 
         btn_recommend = findViewById(R.id.btn_recommend);
         btn_recommend.setOnClickListener(new View.OnClickListener() {
