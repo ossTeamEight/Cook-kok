@@ -25,18 +25,21 @@
             android:layout_height="match_parent"
             android:background="@drawable/init_roulette"
             android:text="음식 가져오기"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="25sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <Button
         android:id="@+id/btnRotate"
-        android:layout_width="match_parent"
+        android:layout_width="280dp"
         android:layout_height="65dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:text="돌리자" />
+        android:layout_marginTop="50dp"
+        android:text="돌려줘!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/button_background"/>
 
     <TextView
         android:id="@+id/tvResult"

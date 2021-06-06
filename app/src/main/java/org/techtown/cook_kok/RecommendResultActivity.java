@@ -117,7 +117,7 @@ public class RecommendResultActivity extends AppCompatActivity {
         food.addNode("오삼불고기", "T", "F", "T");
 
 
-        for(ListNode p = food.head; p != null; p = p.rlink) {
+        for (ListNode p = food.head; p != null; p = p.rlink) {
             if (p.spicy_data.equals(answer1) && p.soup_data.equals(answer2) && p.rice_data.equals(answer3)) {
                 food_names += (p.food_name + ",");
             }
