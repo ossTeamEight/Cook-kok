@@ -20,12 +20,12 @@ public class List_others extends AppCompatActivity {
         foodList.add(new Item("라면",R.drawable.o2));
         foodList.add(new Item("샤브샤브",R.drawable.o3));
         foodList.add(new Item("쌀국수",R.drawable.o4));
-        foodList.add(new Item("파니니",R.drawable.o5));
+        foodList.add(new Item("팟타이",R.drawable.o5));
         foodList.add(new Item("우육면",R.drawable.o6));
         foodList.add(new Item("치킨",R.drawable.o7));
         foodList.add(new Item("커리",R.drawable.o8));
-        foodList.add(new Item("파히니",R.drawable.o9));
-        foodList.add(new Item("팟타이",R.drawable.o10));
+        foodList.add(new Item("파니니",R.drawable.o9));
+        foodList.add(new Item("파히타",R.drawable.o10));
 
         FoodAdapter myAdapter=new FoodAdapter(this,R.layout.activity_list_grid_view_form, foodList);
         if(simpleList != null) {
