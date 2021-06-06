@@ -13,12 +13,12 @@
         android:id="@+id/txtclose"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:textColor="#A000BC"
-        android:text="@string/X"
-        android:textStyle="bold"
         android:layout_gravity="end"
+        android:background="@drawable/circlebackground"
         android:gravity="center"
-        android:background="@drawable/circlebackground"/>
+        android:text="@string/X"
+        android:textColor="@color/deep_purple"
+        android:textStyle="bold" />
 
 
     <LinearLayout

@@ -45,7 +45,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
     private int num_roulette;
     String[] m_array = {"짜장면","짬뽕","볶음밥","양꼬치","팔보채","잡채","마라탕","깐풍기","양장피","라조기",
             "냉모밀","돈까스","매운탕","알밥","연어롤","우동","초밥","캘리포니아롤","회","회덮밥",
-            "김밥","김치찌개","보쌈","부대찌개","비빔밥","뼈해장국","순대국","제육볶음","족발","죽",
+            "김밥","김치찌개","보쌈","부대찌개","비빔밥","뼈해장국","순대국","제육볶음","족발","죽","오삼불고기",
             "떡볶이","라면","샤브샤브","쌀국수","파니니","우육면","치킨","커리","파히니","팟타이",
             "라자냐","브리또","샌드위치","샐러드","스테이크","스파게티","오믈렛","크림파스타","피자","햄버거"};
 
@@ -54,7 +54,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
             R.drawable.j1,R.drawable.j2,R.drawable.j3,R.drawable.j4,R.drawable.j5,
             R.drawable.j6,R.drawable.j7,R.drawable.j8,R.drawable.j9,R.drawable.j10,
             R.drawable.k1,R.drawable.k2,R.drawable.k3,R.drawable.k4,R.drawable.k5,
-            R.drawable.k6,R.drawable.k7,R.drawable.k8,R.drawable.k9,R.drawable.k10,
+            R.drawable.k6,R.drawable.k7,R.drawable.k8,R.drawable.k9,R.drawable.k10,R.drawable.k11,
             R.drawable.o1,R.drawable.o2,R.drawable.o3,R.drawable.o4,R.drawable.o5,
             R.drawable.o6,R.drawable.o7,R.drawable.o8,R.drawable.o9,R.drawable.o10,
             R.drawable.w1,R.drawable.w2,R.drawable.w3,R.drawable.w4,R.drawable.w5,
@@ -252,7 +252,8 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
         cookname.setText(text+" 당첨!");
         cookimage = myDialog.findViewById(R.id.cook_image);
 
-        int index = Arrays.binarySearch(m_array,text);
+        int index = Arrays.asList(m_array).indexOf(text);
+
         System.out.println(text);
         System.out.println(index);
         cookimage.setImageResource(id_array[index]);

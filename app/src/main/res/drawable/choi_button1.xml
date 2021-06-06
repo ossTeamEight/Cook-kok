@@ -4,7 +4,7 @@
     <solid android:color="@android:color/white" />
     <stroke
         android:width="1dp"
-        android:color="#A000BC"/>
+        android:color="@color/deep_purple"/>
     <size
         android:width="400dp"
         android:height="40dp" />

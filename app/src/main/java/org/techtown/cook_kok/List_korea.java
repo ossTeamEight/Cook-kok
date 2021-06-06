@@ -26,7 +26,7 @@ public class List_korea extends AppCompatActivity {
         foodList.add(new Item("제육볶음",R.drawable.k8));
         foodList.add(new Item("족발",R.drawable.k9));
         foodList.add(new Item("죽",R.drawable.k10));
-        foodList.add(new Item("오징어삼겹살",R.drawable.k11));
+        foodList.add(new Item("오삼불고기",R.drawable.k11));
 
 
         FoodAdapter myAdapter=new FoodAdapter(this,R.layout.activity_list_grid_view_form, foodList);
