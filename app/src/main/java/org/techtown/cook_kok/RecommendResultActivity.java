@@ -2,6 +2,7 @@ package org.techtown.cook_kok;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -84,9 +85,9 @@ public class RecommendResultActivity extends AppCompatActivity {
         food.addNode("회", "F", "F", "F");
         food.addNode("회덮밥", "F", "F", "T");
         food.addNode("김밥", "F", "F", "T");
-        food.addNode("김치찌게", "T", "T", "T");
+        food.addNode("김치찌개", "T", "T", "T");
         food.addNode("보쌈", "F", "F", "F");
-        food.addNode("부대찌게", "T", "T", "T");
+        food.addNode("부대찌개", "T", "T", "T");
         food.addNode("비빔밥", "F", "F", "T");
         food.addNode("뼈해장국", "T", "T", "T");
         food.addNode("순대국", "F", "T", "T");
@@ -113,6 +114,8 @@ public class RecommendResultActivity extends AppCompatActivity {
         food.addNode("크림파스타", "F", "F", "F");
         food.addNode("피자", "F", "F", "F");
         food.addNode("햄버거", "F", "F", "F");
+        food.addNode("오삼불고기", "T", "F", "T");
+
 
         for(ListNode p = food.head; p != null; p = p.rlink) {
             if (p.spicy_data.equals(answer1) && p.soup_data.equals(answer2) && p.rice_data.equals(answer3)) {
@@ -121,10 +124,6 @@ public class RecommendResultActivity extends AppCompatActivity {
         }
         text_foodlist = findViewById(R.id.text_foodlist);
         text_foodlist.setText(food_names + " " + "이중에 먹어!");
-//        foodlist = foodnames.split(",");
-//        for(int i = 0; i < foodlist.length; i++) {
-//            text_foodlist.setText(foodlist[i]);
-//        }
 
         btn_recommend = findViewById(R.id.btn_recommend);
         btn_recommend.setOnClickListener(new View.OnClickListener() {
@@ -139,24 +138,20 @@ public class RecommendResultActivity extends AppCompatActivity {
         btn_roulette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_roulette = new Intent(RecommendResultActivity.this, rouletteActivity.class);
+                Intent intent_roulette = new Intent(RecommendResultActivity.this, RouletteActivity.class);
                 intent_roulette.putExtra("food_names", food_names);
                 startActivity(intent_roulette);
 
             }
         });
 
-        btn_show = findViewById(R.id.btn_show);
+        btn_show= findViewById(R.id.btn_show);
         btn_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_show = new Intent(RecommendResultActivity.this, showActivity.class);
+                Intent intent_show = new Intent(RecommendResultActivity.this, ShowActivity.class);
                 startActivity(intent_show);
             }
         });
     }
 }
-//    Intent intent_roulette = getIntent();
-//
-//    Bundle bundle = intent_roulette.getExtras();
-//    String food_names = bundle.getString("food_names");
