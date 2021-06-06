@@ -5,10 +5,18 @@
     android:gravity="center|top"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/back"
+        android:layout_gravity="left"
+        android:layout_margin="5dp"/>
+
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/neon_pick"
         android:rotationX="180" />
 
@@ -25,7 +33,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/init_roulette"
             android:text="음식 가져오기"
-            android:textColor="@android:color/holo_purple"
+            android:textColor="@color/deep_purple"
             android:textSize="25sp"
             android:textStyle="bold" />
     </RelativeLayout>
@@ -45,7 +53,7 @@
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="결과\n"
         android:textSize="32sp" />

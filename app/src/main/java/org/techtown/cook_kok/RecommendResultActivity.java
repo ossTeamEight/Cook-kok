@@ -152,5 +152,14 @@ public class RecommendResultActivity extends AppCompatActivity {
                 startActivity(intent_show);
             }
         });
+
+        Button back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

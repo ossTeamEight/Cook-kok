@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="350dp"
     android:layout_height="590dp"
-    android:background="#ffffff"
+    android:background="@drawable/background_layout"
     android:padding="5dp"
     android:layout_gravity="center">
 
@@ -13,12 +13,14 @@
         android:id="@+id/txtclose"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:textColor="@color/deep_purple"
-        android:text="@string/X"
-        android:textStyle="bold"
         android:layout_gravity="end"
+        android:background="@drawable/circlebackground"
         android:gravity="center"
-        android:background="@drawable/circlebackground"/>
+        android:text="@string/X"
+        android:textSize="18dp"
+        android:textColor="@color/deep_purple"
+        android:textStyle="bold" />
+
 
 
     <LinearLayout
