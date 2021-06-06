@@ -237,7 +237,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
                     ShowPopup(text);
                 }
                 break;
-            //확장가능
+                //확장가능
         }
 
         tvResult.setText("오늘의 식사 "+text+"!");
