@@ -15,7 +15,7 @@ public class RecommendQ3Activity extends AppCompatActivity {
 
     Button btn_no;
     Button btn_yes;
-    ImageView sprit;
+    ImageView genie;
     ImageView balloon;
     Intent intent2;
 
@@ -59,9 +59,9 @@ public class RecommendQ3Activity extends AppCompatActivity {
         });
 
 
-        sprit = (ImageView)findViewById(R.id.sprit);
-        Glide.with(this).load(R.raw.sprit_image).into(sprit);
-        sprit.setOnClickListener(new View.OnClickListener() {
+        genie = (ImageView)findViewById(R.id.genie);
+        Glide.with(this).load(R.drawable.genie).into(genie);
+        genie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"그만 눌러요...",Toast.LENGTH_SHORT).show();
