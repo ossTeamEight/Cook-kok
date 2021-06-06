@@ -141,7 +141,6 @@ public class RecommendResultActivity extends AppCompatActivity {
                 Intent intent_roulette = new Intent(RecommendResultActivity.this, RouletteActivity.class);
                 intent_roulette.putExtra("food_names", food_names);
                 startActivity(intent_roulette);
-
             }
         });
 
