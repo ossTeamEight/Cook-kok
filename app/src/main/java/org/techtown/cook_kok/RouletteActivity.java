@@ -117,6 +117,15 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
                 rotateLayout(layoutRoulette, num_roulette);
             }
         });
+
+        Button back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void rotateLayout(final RelativeLayout layout, final int num) {

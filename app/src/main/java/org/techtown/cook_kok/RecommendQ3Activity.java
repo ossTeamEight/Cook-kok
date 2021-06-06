@@ -75,6 +75,15 @@ public class RecommendQ3Activity extends AppCompatActivity {
 
             }
         });
+
+        Button back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     @Override
     public void onBackPressed() {

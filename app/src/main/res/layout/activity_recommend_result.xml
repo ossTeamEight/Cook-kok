@@ -6,39 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".RecommendResultActivity">
 
-
     <Button
-        android:id="@+id/btn_roulette"
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/back"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        android:text="룰렛 돌려줘"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genie" />
-
-    <Button
-        android:id="@+id/btn_recommend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:text="다시 할래"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toEndOf="@+id/btn_roulette"
-        app:layout_constraintTop_toBottomOf="@+id/genie" />
-
-    <Button
-        android:id="@+id/btn_show"
-        android:layout_width="194dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="4dp"
-        android:text="음식 리스트 가기"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_roulette" />
+        app:layout_constraintTop_toBottomOf="@+id/genie">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_roulette"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="룰렛 돌려줘"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_recommend"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:text="다시 할래"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button_backgroundlight"
+            android:text="음식 리스트 가기"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/genie"
