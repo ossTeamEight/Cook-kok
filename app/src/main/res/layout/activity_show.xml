@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:text="@string/한번_사진으로_골라보세요"
+        android:fontFamily="@font/md"
         android:textColor="@color/deep_purple"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,6 +81,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="@string/한식"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp"
                     tools:ignore="DuplicateIds" />
 
@@ -115,6 +117,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:text="@string/중식"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp"
                     tools:ignore="DuplicateIds" />
 
@@ -161,6 +164,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="@string/양식"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton
@@ -195,6 +199,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:text="@string/일식"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton
@@ -239,6 +244,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="@string/기타"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton
@@ -273,6 +279,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:text="@string/랜덤게임"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton

@@ -4,23 +4,24 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_burger"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_burger_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecommendResultActivity"></activity>
+        <activity android:name=".Put_nameActivity"></activity>
+        <activity android:name=".RecommendResultActivity" />
         <activity android:name=".RecommendQ1Activity" />
         <activity android:name=".RecommendQ2Activity" />
         <activity android:name=".RecommendQ3Activity" />
         <activity android:name=".ShowActivity" />
         <activity android:name=".RouletteActivity" />
         <activity android:name=".ListActivity" />
-        <activity android:name=".List_korea"></activity>
-        <activity android:name=".List_china"></activity>
-        <activity android:name=".List_japan"></activity>
-        <activity android:name=".List_western"></activity>
-        <activity android:name=".List_others"></activity>
+        <activity android:name=".List_korea" />
+        <activity android:name=".List_china" />
+        <activity android:name=".List_japan" />
+        <activity android:name=".List_western" />
+        <activity android:name=".List_others" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

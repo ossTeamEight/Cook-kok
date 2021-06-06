@@ -14,6 +14,7 @@
         android:layout_height="30dp"
         android:textColor="@color/deep_purple"
         android:text="@string/X"
+        android:fontFamily="@font/md"
         android:textSize="18dp"
         android:textStyle="bold"
         android:layout_gravity="end"
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="초기값"
+        android:fontFamily="@font/md"
         android:textSize="30sp" />
 
     <ImageView
@@ -42,6 +44,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:text="맛있게 드세요!"
+        android:fontFamily="@font/md"
         android:textSize="20sp"/>
 
 </LinearLayout>

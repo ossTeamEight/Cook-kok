@@ -17,6 +17,7 @@
         android:background="@drawable/circlebackground"
         android:gravity="center"
         android:text="@string/X"
+        android:fontFamily="@font/md"
         android:textSize="18dp"
         android:textColor="@color/deep_purple"
         android:textStyle="bold" />
@@ -26,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="사진으로도 고르시기 힘들다면"
+        android:fontFamily="@font/md"
         android:textSize="22dp"
         android:layout_marginLeft="10dp"
         app:layout_constraintTop_toBottomOf="@+id/txtclose"/>
@@ -35,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="네이버 랜덤게임으로 골라보세요!"
+        android:fontFamily="@font/md"
         android:textSize="22dp"
         android:layout_marginLeft="10dp"
 
@@ -69,6 +72,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:text="@string/당첨자추첨"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton
@@ -105,6 +109,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:text="@string/사다리게임"
+
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton
@@ -150,6 +156,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:text="@string/제비뽑기"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton
@@ -186,6 +193,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:text="@string/화살표돌리기"
+                    android:fontFamily="@font/md"
                     android:textSize="24sp" />
 
                 <ImageButton

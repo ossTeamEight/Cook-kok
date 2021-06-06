@@ -36,6 +36,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/button_background"
                 android:text="룰렛 돌려줘"
+                android:fontFamily="@font/md"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -46,6 +47,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/button_background"
                 android:text="다시 할래"
+                android:fontFamily="@font/md"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -58,6 +60,7 @@
             android:layout_marginTop="4dp"
             android:background="@drawable/button_backgroundlight"
             android:text="음식 리스트 가기"
+            android:fontFamily="@font/md"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -77,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="음식목록"
+        android:fontFamily="@font/md"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

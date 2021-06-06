@@ -17,6 +17,7 @@
         android:background="@drawable/circlebackground"
         android:gravity="center"
         android:text="@string/X"
+        android:fontFamily="@font/md"
         android:textSize="18dp"
         android:textColor="@color/deep_purple"
         android:textStyle="bold" />
@@ -51,6 +52,7 @@
                     android:layout_marginTop="0dp"
                     android:background="@drawable/choi_button1"
                     android:text="@string/탕수육"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_1_Clicked"/>
 
@@ -87,6 +89,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/볶음밥"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_2_Clicked"/>
 
@@ -123,6 +126,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/깐풍기"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_3_Clicked"/>
 
@@ -159,6 +163,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/팔보채"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_4_Clicked"/>
 
@@ -195,6 +200,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/양장피"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_5_Clicked"/>
 
@@ -231,6 +237,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/짬뽕"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_6_Clicked"/>
 
@@ -267,6 +274,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/마라탕"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_7_Clicked"/>
 
@@ -303,6 +311,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/짜장면"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_8_Clicked"/>
 
@@ -339,6 +348,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/잡채"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_9_Clicked"/>
 
@@ -375,6 +385,7 @@
                     android:background="@drawable/choi_button1"
                     android:text="@string/양꼬치"
 
+                    android:fontFamily="@font/md"
                     android:textSize="30sp"
                     android:onClick="onButton_2_10_Clicked"/>
 

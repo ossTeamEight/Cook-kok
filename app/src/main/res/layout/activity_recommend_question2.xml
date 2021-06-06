@@ -50,6 +50,7 @@
             android:layout_marginEnd="44dp"
             android:layout_marginRight="44dp"
             android:text="음식이 땡기나요?"
+            android:fontFamily="@font/md"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,6 +62,7 @@
             android:layout_marginLeft="19dp"
             android:layout_marginBottom="8dp"
             android:text="국물 있는"
+            android:fontFamily="@font/md"
             app:layout_constraintBottom_toTopOf="@+id/textView1"
             app:layout_constraintStart_toStartOf="@+id/textView1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -79,6 +81,7 @@
             android:layout_margin="30dp"
             android:background="@drawable/button_background"
             android:text="네"
+            android:fontFamily="@font/md"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -89,6 +92,7 @@
             android:layout_margin="30dp"
             android:background="@drawable/button_backgroundlight"
             android:text="아니요"
+            android:fontFamily="@font/md"
             android:textStyle="bold" />
     </LinearLayout>
 

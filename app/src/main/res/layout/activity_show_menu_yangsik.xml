@@ -17,6 +17,7 @@
         android:background="@drawable/circlebackground"
         android:gravity="center"
         android:text="@string/X"
+        android:fontFamily="@font/md"
         android:textSize="18dp"
         android:textColor="@color/deep_purple"
         android:textStyle="bold" />
@@ -52,6 +53,7 @@
                     android:background="@drawable/choi_button1"
                     android:onClick="onButton_3_1_Clicked"
                     android:text="@string/라자냐"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -88,6 +90,7 @@
                     android:onClick="onButton_3_2_Clicked"
 
                     android:text="@string/브리또"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -124,6 +127,7 @@
                     android:onClick="onButton_3_3_Clicked"
 
                     android:text="@string/샌드위치"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -160,6 +164,7 @@
                     android:onClick="onButton_3_4_Clicked"
 
                     android:text="@string/샐러드"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -196,6 +201,7 @@
                     android:onClick="onButton_3_5_Clicked"
 
                     android:text="@string/스테이크"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -232,6 +238,7 @@
                     android:onClick="onButton_3_6_Clicked"
 
                     android:text="@string/스파게티"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -268,6 +275,7 @@
                     android:onClick="onButton_3_7_Clicked"
 
                     android:text="@string/오믈렛"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -304,6 +312,7 @@
                     android:onClick="onButton_3_8_Clicked"
 
                     android:text="@string/크림파스타"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -340,6 +349,7 @@
                     android:onClick="onButton_3_9_Clicked"
 
                     android:text="@string/피자"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -376,6 +386,7 @@
                     android:onClick="onButton_3_10_Clicked"
 
                     android:text="@string/햄버거"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
