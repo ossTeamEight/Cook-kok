@@ -33,6 +33,7 @@ public class RecommendQ1Activity extends AppCompatActivity {
                 Intent intent1 = new Intent(RecommendQ1Activity.this, RecommendQ2Activity.class);
                 intent1.putExtra("answer1", answer1);
                 startActivity(intent1); //액티비티 이동.
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             }
         });
 
@@ -44,7 +45,7 @@ public class RecommendQ1Activity extends AppCompatActivity {
                 Intent intent1 = new Intent(RecommendQ1Activity.this, RecommendQ2Activity.class);
                 intent1.putExtra("answer1", answer1);
                 startActivity(intent1); //액티비티 이동.
-            }
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);            }
         });
         ;
 

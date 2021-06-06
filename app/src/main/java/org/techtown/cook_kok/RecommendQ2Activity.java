@@ -23,6 +23,7 @@ public class RecommendQ2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommend_question2);
+        //overridePendingTransition(R.anim.horizon_enter, R.anim.none);
 
         intent1 = getIntent();
 
@@ -37,6 +38,7 @@ public class RecommendQ2Activity extends AppCompatActivity {
                 intent2.putExtra("answer1", answer1);
                 intent2.putExtra("answer2", answer2);
                 startActivity(intent2); //액티비티 이동.
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             }
         });
 
@@ -51,7 +53,7 @@ public class RecommendQ2Activity extends AppCompatActivity {
                 intent2.putExtra("answer1", answer1);
                 intent2.putExtra("answer2", answer2);
                 startActivity(intent2); //액티비티 이동.
-            }
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);            }
         });
 
 
@@ -71,5 +73,11 @@ public class RecommendQ2Activity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
     }
 }
