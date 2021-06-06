@@ -140,6 +140,10 @@ public class ShowActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=%EC%A3%BD&tbm=isch&ved=2ahUKEwidoeC-m_fwAhVXB6YKHRDtBR0Q2-cCegQIABAA&oq=%EC%A3%BD&gs_lcp=CgNpbWcQAzIFCAAQsQMyBQgAELEDMgUIABCxAzICCAAyAggAMgIIADICCAAyAggAMgUIABCxAzICCABQjl5Yjl5gvGZoAHAAeACAAWCIAWCSAQExmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=mJC2YJ31EteOmAWQ2pfoAQ&bih=937&biw=1920"));
         startActivity(intent);
     }
+    public void onButton_1_11_Clicked(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=%EC%98%A4%EC%82%BC%EB%B6%88%EA%B3%A0%EA%B8%B0&source=lnms&tbm=isch&sa=X&ved=2ahUKEwisxYqyhYLxAhWINZQKHTNWAiYQ_AUoAXoECAEQAw&biw=1503&bih=927"));
+        startActivity(intent);
+    }
 
     public void onButton_2_1_Clicked(View view){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=%ED%83%95%EC%88%98%EC%9C%A1&tbm=isch&ved=2ahUKEwjgubHFm_fwAhXGxIsBHXlPCtkQ2-cCegQIABAA&oq=%ED%83%95%EC%88%98%EC%9C%A1&gs_lcp=CgNpbWcQAzIFCAAQsQMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBUNS4E1jzvhNgq8ATaAFwAHgBgAF4iAHOBpIBAzMuNZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=ppC2YODODcaJr7wP-Z6pyA0&bih=937&biw=1920"));
