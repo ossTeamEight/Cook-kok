@@ -322,7 +322,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
                 float medianAngle = (temp + (sweepAngle / 2f)) * (float) Math.PI / 180f;
 
                 paint.setColor(Color.BLACK);
-                paint.setTextSize(64);
+                paint.setTextSize(50);
                 paint.setTypeface(typeface);
                 paint.setStyle(Paint.Style.FILL_AND_STROKE);
 

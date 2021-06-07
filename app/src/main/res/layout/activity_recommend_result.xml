@@ -68,7 +68,7 @@
         android:id="@+id/genie"
         android:layout_width="370dp"
         android:layout_height="328dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="73dp"
         android:src="@drawable/genie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,14 +76,28 @@
 
     <TextView
         android:id="@+id/text_foodlist"
-        android:layout_width="wrap_content"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="음식목록"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="23dp"
         android:fontFamily="@font/md"
+        android:text="음식목록"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wordbox" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
