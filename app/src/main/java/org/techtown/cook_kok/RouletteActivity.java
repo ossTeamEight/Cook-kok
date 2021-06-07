@@ -1,5 +1,6 @@
 package org.techtown.cook_kok;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +13,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -290,6 +293,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
             this.num = num;
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
         protected void onDraw(Canvas canvas) {
             super.onDraw(canvas);
@@ -306,6 +310,7 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
             int radius = (rect.right - rect.left) / 2;
 
             int temp = 0;
+            Typeface typeface = getResources().getFont(R.font.md);
 
             for (int i = 0; i < num; i++) {
                 paint.setColor(COLORS[i%2]);
@@ -317,7 +322,8 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
                 float medianAngle = (temp + (sweepAngle / 2f)) * (float) Math.PI / 180f;
 
                 paint.setColor(Color.BLACK);
-                paint.setTextSize(64);
+                paint.setTextSize(50);
+                paint.setTypeface(typeface);
                 paint.setStyle(Paint.Style.FILL_AND_STROKE);
 
                 float arcCenterX = (float) (centerX + (radius * Math.cos(medianAngle))); // Arc's center X

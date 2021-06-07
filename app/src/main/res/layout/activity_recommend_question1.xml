@@ -51,6 +51,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
             android:text="매운 음식이 땡기나요?"
+            android:fontFamily="@font/md"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -69,6 +70,7 @@
             android:layout_margin="30dp"
             android:background="@drawable/button_background"
             android:text="네"
+            android:fontFamily="@font/md"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -79,6 +81,7 @@
             android:layout_margin="30dp"
             android:background="@drawable/button_backgroundlight"
             android:text="아니요"
+            android:fontFamily="@font/md"
             android:textStyle="bold" />
     </LinearLayout>
 

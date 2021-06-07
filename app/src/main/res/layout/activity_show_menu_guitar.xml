@@ -17,6 +17,7 @@
         android:background="@drawable/circlebackground"
         android:gravity="center"
         android:text="@string/X"
+        android:fontFamily="@font/md"
         android:textSize="18dp"
         android:textColor="@color/deep_purple"
         android:textStyle="bold" />
@@ -53,6 +54,7 @@
                     android:background="@drawable/choi_button1"
                     android:onClick="onButton_5_1_Clicked"
                     android:text="@string/떡볶이"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -89,6 +91,7 @@
                     android:onClick="onButton_5_2_Clicked"
 
                     android:text="@string/라면"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -125,6 +128,7 @@
                     android:onClick="onButton_5_3_Clicked"
 
                     android:text="@string/샤브샤브"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -161,6 +165,7 @@
                     android:onClick="onButton_5_4_Clicked"
 
                     android:text="@string/쌀국수"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -197,6 +202,7 @@
                     android:onClick="onButton_5_5_Clicked"
 
                     android:text="@string/우육면"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -233,6 +239,7 @@
                     android:onClick="onButton_5_6_Clicked"
 
                     android:text="@string/치킨"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -269,6 +276,7 @@
                     android:onClick="onButton_5_7_Clicked"
 
                     android:text="@string/커리"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -305,6 +313,7 @@
                     android:onClick="onButton_5_8_Clicked"
 
                     android:text="@string/파니니"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -341,6 +350,7 @@
                     android:onClick="onButton_5_9_Clicked"
 
                     android:text="@string/파히타"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -377,6 +387,7 @@
                     android:onClick="onButton_5_10_Clicked"
 
                     android:text="@string/팟타이"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>

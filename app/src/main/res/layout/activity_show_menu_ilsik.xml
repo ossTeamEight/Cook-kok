@@ -17,6 +17,7 @@
         android:background="@drawable/circlebackground"
         android:gravity="center"
         android:text="@string/X"
+        android:fontFamily="@font/md"
         android:textSize="18dp"
         android:textColor="@color/deep_purple"
         android:textStyle="bold" />
@@ -52,6 +53,7 @@
                     android:background="@drawable/choi_button1"
                     android:onClick="onButton_4_1_Clicked"
                     android:text="@string/돈까스"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -88,6 +90,7 @@
                     android:onClick="onButton_4_2_Clicked"
 
                     android:text="@string/알밥"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -124,6 +127,7 @@
                     android:onClick="onButton_4_3_Clicked"
 
                     android:text="@string/캘리포니아롤"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -160,6 +164,7 @@
                     android:onClick="onButton_4_4_Clicked"
 
                     android:text="@string/연어롤"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -196,6 +201,7 @@
                     android:onClick="onButton_4_5_Clicked"
 
                     android:text="@string/초밥"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -232,6 +238,7 @@
                     android:onClick="onButton_4_6_Clicked"
 
                     android:text="@string/회"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -268,6 +275,7 @@
                     android:onClick="onButton_4_7_Clicked"
 
                     android:text="@string/회덮밥"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -304,6 +312,7 @@
                     android:onClick="onButton_4_8_Clicked"
 
                     android:text="@string/냉모밀"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -340,6 +349,7 @@
                     android:onClick="onButton_4_9_Clicked"
 
                     android:text="@string/우동"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
@@ -376,6 +386,7 @@
                     android:onClick="onButton_4_10_Clicked"
 
                     android:text="@string/매운탕"
+                    android:fontFamily="@font/md"
                     android:textSize="30sp" />
 
             </RelativeLayout>
