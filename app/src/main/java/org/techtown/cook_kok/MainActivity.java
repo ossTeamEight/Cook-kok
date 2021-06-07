@@ -2,6 +2,7 @@ package org.techtown.cook_kok;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -41,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button button_roulette = (Button) findViewById(R.id.roulette);
-//        button_roulette.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), RouletteActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button button_roulette = (Button) findViewById(R.id.roulette);
+        button_roulette.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Put_nameActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
