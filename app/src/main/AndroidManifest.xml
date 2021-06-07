@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_burger_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Put_nameActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+                </intent-filter>
+        </activity>
+        <activity android:name=".Put_nameActivity" />
         <activity android:name=".RecommendResultActivity" />
         <activity android:name=".RecommendQ1Activity" />
         <activity android:name=".RecommendQ2Activity" />
@@ -23,11 +33,11 @@
         <activity android:name=".List_western" />
         <activity android:name=".List_others" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <meta-data
