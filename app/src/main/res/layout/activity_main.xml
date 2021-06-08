@@ -38,7 +38,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:background="@drawable/btn_main"
-            android:text="쿡 콕! : 음식 추천 해줄게요."
+            android:text="쿡 콕! : 질문형 음식 추천"
             android:fontFamily="@font/md"
             android:textSize="20dp"
             android:textStyle="bold"/>
@@ -61,7 +61,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
             android:background="@drawable/btn_simple"
-            android:text="돌림판 : 아무거나 돌려보세요."
+            android:text="돌림판 : 돌려 돌려 돌림판!"
             android:fontFamily="@font/md"
             android:textSize="20dp"/>
 
