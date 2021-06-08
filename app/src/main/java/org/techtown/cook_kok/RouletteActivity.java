@@ -264,11 +264,12 @@ public class RouletteActivity extends AppCompatActivity {//돌림판을 누르�
         cookname.setText(text+" 당첨!");
         cookimage = myDialog.findViewById(R.id.cook_image);
 
-        int index = Arrays.asList(m_array).indexOf(text);
-
-        System.out.println(text);
-        System.out.println(index);
-        cookimage.setImageResource(id_array[index]);
+        try {
+            int index = Arrays.asList(m_array).indexOf(text);
+            cookimage.setImageResource(id_array[index]);
+        }catch (ArrayIndexOutOfBoundsException e){
+            cookimage.setImageResource(R.drawable.noimg);
+        }
 
         txtclose=(TextView) myDialog.findViewById(R.id.txtclose);
         txtclose.setOnClickListener(new View.OnClickListener() {
