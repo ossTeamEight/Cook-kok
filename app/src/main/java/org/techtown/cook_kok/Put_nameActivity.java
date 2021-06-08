@@ -40,14 +40,20 @@ public class Put_nameActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                String pattern = "^[\\w,]+,$";
+                String pattern = "^[\\w,]*$";
                 if(!Pattern.matches(pattern, s)){
                     inputLayout.setError("형식에 맞춰주세요.");
                     check = false;
                 }else{
-                    inputLayout.setError(null);
-                    check = true;
-                    food_names = s.toString();
+                    if(Pattern.matches("^[\\w,]+,$",s)){
+                        inputLayout.setError("마지막은 단어로 끝나야합니다.");
+                        check = false;
+                    }
+                    else {
+                        inputLayout.setError(null);
+                        check = true;
+                        food_names = s.toString();
+                    }
                 }
             }
         });
@@ -57,12 +63,21 @@ public class Put_nameActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (check) {
                     Intent intent_roulette = new Intent(Put_nameActivity.this, RouletteActivity.class);
-                    intent_roulette.putExtra("food_names", food_names);
+                    intent_roulette.putExtra("food_names", food_names+",");
                     startActivity(intent_roulette);
                 }
                 else{
                     Toast.makeText(getApplicationContext(),"입력을 완성해주세요!",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        Button back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
 
