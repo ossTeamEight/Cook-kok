@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_burger"
-        android:label="@string/app_name"
+        android:label="쿡콕"
         android:roundIcon="@mipmap/ic_burger_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
